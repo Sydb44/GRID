@@ -1,0 +1,69 @@
+# GRID AI Companion - Git Ignore File
+
+# Build and Binary Files
+bin/
+obj/
+*.exe
+*.dll
+*.pdb
+*.cache
+
+# Visual Studio / IDE Files
+.vs/
+.vscode/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# ClaudeBridge Build Artifacts
+ClaudeBridge/bin/
+ClaudeBridge/obj/
+ClaudeBridge/packages/
+
+# Space Engineers Files (don't commit to user directories)
+%APPDATA%/
+**/AppData/
+**/SpaceEngineers/
+
+# Logs and Temporary Files
+*.log
+*.tmp
+temp/
+logs/
+
+# Communication Files (runtime generated)
+**/Storage/GRID_Communication/
+**/GRID_Communication/
+*.json.tmp
+
+# Backup and Development Files
+*BACKUP*
+*_backup_*
+*.bak
+*.disabled
+
+# SE Mod Compiled Files
+**/*.sbm.cache
+**/*.sbc.cache
+
+# Development Files
+.cursor/
+test_*.bat
+debug_*.txt
+
+# OS Files
+Thumbs.db
+.DS_Store
+*.swp
+*.swo
+
+# NuGet
+packages/
+*.nupkg
+
+# User-specific configuration
+config.local.json
+api_keys.txt
+api_key.txt
+**/api_key.txt

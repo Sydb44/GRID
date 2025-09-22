@@ -1,0 +1,175 @@
+---
+title: "Interface IMyVendingMachine"
+url: "https://keensoftwarehouse.github.io/SpaceEngineersModAPI/api/Sandbox.ModAPI.IMyVendingMachine.html"
+category: "Misc"
+namespace: "Sandbox.ModAPI"
+class: "IMyVendingMachine"
+---
+
+  Interface IMyVendingMachine | Space Engineers ModAPI         
+
+[Show / Hide Table of Contents](#sidetoggle)
+
+# Interface IMyVendingMachine
+
+Describes vending machine block (mods interface)
+
+##### Inherited Members
+
+[IMyStoreBlock.InsertOffer(MyStoreItemData, Int64)](Sandbox.ModAPI.IMyStoreBlock.html#Sandbox_ModAPI_IMyStoreBlock_InsertOffer_VRage_Game_ModAPI_MyStoreItemData_System_Int64__)
+
+[IMyStoreBlock.InsertOrder(MyStoreItemData, Int64)](Sandbox.ModAPI.IMyStoreBlock.html#Sandbox_ModAPI_IMyStoreBlock_InsertOrder_VRage_Game_ModAPI_MyStoreItemData_System_Int64__)
+
+[IMyStoreBlock.CreateStoreItem(MyDefinitionId, Int32, Int32, StoreItemTypes)](Sandbox.ModAPI.IMyStoreBlock.html#Sandbox_ModAPI_IMyStoreBlock_CreateStoreItem_VRage_Game_MyDefinitionId_System_Int32_System_Int32_VRage_Game_ObjectBuilders_Definitions_StoreItemTypes_)
+
+[IMyStoreBlock.CreateStoreItem(Int32, Int32, StoreItemTypes, ItemTypes)](Sandbox.ModAPI.IMyStoreBlock.html#Sandbox_ModAPI_IMyStoreBlock_CreateStoreItem_System_Int32_System_Int32_VRage_Game_ObjectBuilders_Definitions_StoreItemTypes_VRage_Game_ObjectBuilders_Definitions_ItemTypes_)
+
+[IMyStoreBlock.CreateStoreItem(String, Int32, Int32, Int32)](Sandbox.ModAPI.IMyStoreBlock.html#Sandbox_ModAPI_IMyStoreBlock_CreateStoreItem_System_String_System_Int32_System_Int32_System_Int32_)
+
+[IMyStoreBlock.CreateStoreItem(MyObjectBuilder\_StoreItem)](Sandbox.ModAPI.IMyStoreBlock.html#Sandbox_ModAPI_IMyStoreBlock_CreateStoreItem_VRage_Game_ObjectBuilders_Definitions_MyObjectBuilder_StoreItem_)
+
+[IMyStoreBlock.GetStoreItems(List<IMyStoreItem>)](Sandbox.ModAPI.IMyStoreBlock.html#Sandbox_ModAPI_IMyStoreBlock_GetStoreItems_System_Collections_Generic_List_VRage_Game_ModAPI_IMyStoreItem__)
+
+[IMyStoreBlock.GetStoreItemById(Int64)](Sandbox.ModAPI.IMyStoreBlock.html#Sandbox_ModAPI_IMyStoreBlock_GetStoreItemById_System_Int64_)
+
+[IMyStoreBlock.InsertStoreItem(IMyStoreItem)](Sandbox.ModAPI.IMyStoreBlock.html#Sandbox_ModAPI_IMyStoreBlock_InsertStoreItem_VRage_Game_ModAPI_IMyStoreItem_)
+
+[IMyStoreBlock.RemoveStoreItem(IMyStoreItem)](Sandbox.ModAPI.IMyStoreBlock.html#Sandbox_ModAPI_IMyStoreBlock_RemoveStoreItem_VRage_Game_ModAPI_IMyStoreItem_)
+
+[IMyFunctionalBlock.GetFramesFromLastTrigger()](Sandbox.ModAPI.IMyFunctionalBlock.html#Sandbox_ModAPI_IMyFunctionalBlock_GetFramesFromLastTrigger)
+
+[IMyFunctionalBlock.IsUpdateTimerCreated](Sandbox.ModAPI.IMyFunctionalBlock.html#Sandbox_ModAPI_IMyFunctionalBlock_IsUpdateTimerCreated)
+
+[IMyFunctionalBlock.IsUpdateTimerEnabled](Sandbox.ModAPI.IMyFunctionalBlock.html#Sandbox_ModAPI_IMyFunctionalBlock_IsUpdateTimerEnabled)
+
+[IMyFunctionalBlock.EnabledChanged](Sandbox.ModAPI.IMyFunctionalBlock.html#Sandbox_ModAPI_IMyFunctionalBlock_EnabledChanged)
+
+[IMyFunctionalBlock.UpdateTimerTriggered](Sandbox.ModAPI.IMyFunctionalBlock.html#Sandbox_ModAPI_IMyFunctionalBlock_UpdateTimerTriggered)
+
+[IMyTerminalBlock.RefreshCustomInfo()](Sandbox.ModAPI.IMyTerminalBlock.html#Sandbox_ModAPI_IMyTerminalBlock_RefreshCustomInfo)
+
+[IMyTerminalBlock.SetDetailedInfoDirty()](Sandbox.ModAPI.IMyTerminalBlock.html#Sandbox_ModAPI_IMyTerminalBlock_SetDetailedInfoDirty)
+
+[IMyTerminalBlock.GetDetailedInfo()](Sandbox.ModAPI.IMyTerminalBlock.html#Sandbox_ModAPI_IMyTerminalBlock_GetDetailedInfo)
+
+[IMyTerminalBlock.ClearDetailedInfo()](Sandbox.ModAPI.IMyTerminalBlock.html#Sandbox_ModAPI_IMyTerminalBlock_ClearDetailedInfo)
+
+[IMyTerminalBlock.IsInSameLogicalGroupAs(IMyTerminalBlock)](Sandbox.ModAPI.IMyTerminalBlock.html#Sandbox_ModAPI_IMyTerminalBlock_IsInSameLogicalGroupAs_Sandbox_ModAPI_IMyTerminalBlock_)
+
+[IMyTerminalBlock.IsSameConstructAs(IMyTerminalBlock)](Sandbox.ModAPI.IMyTerminalBlock.html#Sandbox_ModAPI_IMyTerminalBlock_IsSameConstructAs_Sandbox_ModAPI_IMyTerminalBlock_)
+
+[IMyTerminalBlock.IsDetailedInfoDirty](Sandbox.ModAPI.IMyTerminalBlock.html#Sandbox_ModAPI_IMyTerminalBlock_IsDetailedInfoDirty)
+
+[IMyTerminalBlock.CustomDataChanged](Sandbox.ModAPI.IMyTerminalBlock.html#Sandbox_ModAPI_IMyTerminalBlock_CustomDataChanged)
+
+[IMyTerminalBlock.CustomNameChanged](Sandbox.ModAPI.IMyTerminalBlock.html#Sandbox_ModAPI_IMyTerminalBlock_CustomNameChanged)
+
+[IMyTerminalBlock.OwnershipChanged](Sandbox.ModAPI.IMyTerminalBlock.html#Sandbox_ModAPI_IMyTerminalBlock_OwnershipChanged)
+
+[IMyTerminalBlock.PropertiesChanged](Sandbox.ModAPI.IMyTerminalBlock.html#Sandbox_ModAPI_IMyTerminalBlock_PropertiesChanged)
+
+[IMyTerminalBlock.ShowOnHUDChanged](Sandbox.ModAPI.IMyTerminalBlock.html#Sandbox_ModAPI_IMyTerminalBlock_ShowOnHUDChanged)
+
+[IMyTerminalBlock.VisibilityChanged](Sandbox.ModAPI.IMyTerminalBlock.html#Sandbox_ModAPI_IMyTerminalBlock_VisibilityChanged)
+
+[IMyTerminalBlock.AppendingCustomInfo](Sandbox.ModAPI.IMyTerminalBlock.html#Sandbox_ModAPI_IMyTerminalBlock_AppendingCustomInfo)
+
+[IMyCubeBlock.CalcLocalMatrix(Matrix, String)](VRage.Game.ModAPI.IMyCubeBlock.html#VRage_Game_ModAPI_IMyCubeBlock_CalcLocalMatrix_VRageMath_Matrix__System_String__)
+
+[IMyCubeBlock.CalculateCurrentModel(Matrix)](VRage.Game.ModAPI.IMyCubeBlock.html#VRage_Game_ModAPI_IMyCubeBlock_CalculateCurrentModel_VRageMath_Matrix__)
+
+[IMyCubeBlock.GetObjectBuilderCubeBlock(Boolean)](VRage.Game.ModAPI.IMyCubeBlock.html#VRage_Game_ModAPI_IMyCubeBlock_GetObjectBuilderCubeBlock_System_Boolean_)
+
+[IMyCubeBlock.Init()](VRage.Game.ModAPI.IMyCubeBlock.html#VRage_Game_ModAPI_IMyCubeBlock_Init)
+
+[IMyCubeBlock.Init(MyObjectBuilder\_CubeBlock, IMyCubeGrid)](VRage.Game.ModAPI.IMyCubeBlock.html#VRage_Game_ModAPI_IMyCubeBlock_Init_VRage_Game_MyObjectBuilder_CubeBlock_VRage_Game_ModAPI_IMyCubeGrid_)
+
+[IMyCubeBlock.OnBuildSuccess(Int64)](VRage.Game.ModAPI.IMyCubeBlock.html#VRage_Game_ModAPI_IMyCubeBlock_OnBuildSuccess_System_Int64_)
+
+[IMyCubeBlock.OnBuildSuccess(Int64, Boolean)](VRage.Game.ModAPI.IMyCubeBlock.html#VRage_Game_ModAPI_IMyCubeBlock_OnBuildSuccess_System_Int64_System_Boolean_)
+
+[IMyCubeBlock.OnDestroy()](VRage.Game.ModAPI.IMyCubeBlock.html#VRage_Game_ModAPI_IMyCubeBlock_OnDestroy)
+
+[IMyCubeBlock.OnModelChange()](VRage.Game.ModAPI.IMyCubeBlock.html#VRage_Game_ModAPI_IMyCubeBlock_OnModelChange)
+
+[IMyCubeBlock.OnRegisteredToGridSystems()](VRage.Game.ModAPI.IMyCubeBlock.html#VRage_Game_ModAPI_IMyCubeBlock_OnRegisteredToGridSystems)
+
+[IMyCubeBlock.OnRemovedByCubeBuilder()](VRage.Game.ModAPI.IMyCubeBlock.html#VRage_Game_ModAPI_IMyCubeBlock_OnRemovedByCubeBuilder)
+
+[IMyCubeBlock.OnUnregisteredFromGridSystems()](VRage.Game.ModAPI.IMyCubeBlock.html#VRage_Game_ModAPI_IMyCubeBlock_OnUnregisteredFromGridSystems)
+
+[IMyCubeBlock.RaycastDetectors(Vector3D, Vector3D)](VRage.Game.ModAPI.IMyCubeBlock.html#VRage_Game_ModAPI_IMyCubeBlock_RaycastDetectors_VRageMath_Vector3D_VRageMath_Vector3D_)
+
+[IMyCubeBlock.ReloadDetectors(Boolean)](VRage.Game.ModAPI.IMyCubeBlock.html#VRage_Game_ModAPI_IMyCubeBlock_ReloadDetectors_System_Boolean_)
+
+[IMyCubeBlock.SetDamageEffect(Boolean)](VRage.Game.ModAPI.IMyCubeBlock.html#VRage_Game_ModAPI_IMyCubeBlock_SetDamageEffect_System_Boolean_)
+
+[IMyCubeBlock.SetEffect(String, Boolean)](VRage.Game.ModAPI.IMyCubeBlock.html#VRage_Game_ModAPI_IMyCubeBlock_SetEffect_System_String_System_Boolean_)
+
+[IMyCubeBlock.SetEffect(String, Single, Boolean, Boolean, Boolean)](VRage.Game.ModAPI.IMyCubeBlock.html#VRage_Game_ModAPI_IMyCubeBlock_SetEffect_System_String_System_Single_System_Boolean_System_Boolean_System_Boolean_)
+
+[IMyCubeBlock.RemoveEffect(String, Int32)](VRage.Game.ModAPI.IMyCubeBlock.html#VRage_Game_ModAPI_IMyCubeBlock_RemoveEffect_System_String_System_Int32_)
+
+[IMyCubeBlock.AddUpgradeValue(String, Single)](VRage.Game.ModAPI.IMyCubeBlock.html#VRage_Game_ModAPI_IMyCubeBlock_AddUpgradeValue_System_String_System_Single_)
+
+[IMyCubeBlock.CubeGrid](VRage.Game.ModAPI.IMyCubeBlock.html#VRage_Game_ModAPI_IMyCubeBlock_CubeGrid)
+
+[IMyCubeBlock.ResourceSink](VRage.Game.ModAPI.IMyCubeBlock.html#VRage_Game_ModAPI_IMyCubeBlock_ResourceSink)
+
+[IMyCubeBlock.UpgradeValues](VRage.Game.ModAPI.IMyCubeBlock.html#VRage_Game_ModAPI_IMyCubeBlock_UpgradeValues)
+
+[IMyCubeBlock.SlimBlock](VRage.Game.ModAPI.IMyCubeBlock.html#VRage_Game_ModAPI_IMyCubeBlock_SlimBlock)
+
+[IMyCubeBlock.CheckConnectionAllowed](VRage.Game.ModAPI.IMyCubeBlock.html#VRage_Game_ModAPI_IMyCubeBlock_CheckConnectionAllowed)
+
+[IMyCubeBlock.IsWorkingChanged](VRage.Game.ModAPI.IMyCubeBlock.html#VRage_Game_ModAPI_IMyCubeBlock_IsWorkingChanged)
+
+[IMyCubeBlock.OnUpgradeValuesChanged](VRage.Game.ModAPI.IMyCubeBlock.html#VRage_Game_ModAPI_IMyCubeBlock_OnUpgradeValuesChanged)
+
+[IMyCubeBlock.CubeGridChanged](VRage.Game.ModAPI.IMyCubeBlock.html#VRage_Game_ModAPI_IMyCubeBlock_CubeGridChanged)
+
+[IMyEntity.GetFriendlyName()](VRage.ModAPI.IMyEntity.html#VRage_ModAPI_IMyEntity_GetFriendlyName)
+
+[IMyEntity.Close()](VRage.ModAPI.IMyEntity.html#VRage_ModAPI_IMyEntity_Close)
+
+[IMyEntity.Delete()](VRage.ModAPI.IMyEntity.html#VRage_ModAPI_IMyEntity_Delete)
+
+[IMyEntity.GetObjectBuilder(Boolean)](VRage.ModAPI.IMyEntity.html#VRage_ModAPI_IMyEntity_GetObjectBuilder_System_Boolean_)
+
+[IMyEntity.BeforeSave()](VRage.ModAPI.IMyEntity.html#VRage_ModAPI_IMyEntity_BeforeSave)
+
+[IMyEntity.GetTopMostParent(Type)](VRage.ModAPI.IMyEntity.html#VRage_ModAPI_IMyEntity_GetTopMostParent_System_Type_)
+
+[IMyEntity.SetLocalMatrix(Matrix, Object)](VRage.ModAPI.IMyEntity.html#VRage_ModAPI_IMyEntity_SetLocalMatrix_VRageMath_Matrix_System_Object_)
+
+[IMyEntity.GetChildren(List<IMyEntity>, Func<IMyEntity, Boolean>)](VRage.ModAPI.IMyEntity.html#VRage_ModAPI_IMyEntity_GetChildren_System_Collections_Generic_List_VRage_ModAPI_IMyEntity__System_Func_VRage_ModAPI_IMyEntity_System_Boolean__)
+
+[IMyEntity.GetSubpart(String)](VRage.ModAPI.IMyEntity.html#VRage_ModAPI_IMyEntity_GetSubpart_System_String_)
+
+[IMyEntity.TryGetSubpart(String, MyEntitySubpart)](VRage.ModAPI.IMyEntity.html#VRage_ModAPI_IMyEntity_TryGetSubpart_System_String_VRage_Game_Entity_MyEntitySubpart__)
+
+[IMyEntity.GetDiffuseColor()](VRage.ModAPI.IMyEntity.html#VRage_ModAPI_IMyEntity_GetDiffuseColor)
+
+[IMyEntity.IsVisible()](VRage.ModAPI.IMyEntity.html#VRage_ModAPI_IMyEntity_IsVisible)
+
+[IMyEntity.DebugDraw()](VRage.ModAPI.IMyEntity.html#VRage_ModAPI_IMyEntity_DebugDraw)
+
+[IMyEntity.DebugDrawInvalidTriangles()](VRage.ModAPI.IMyEntity.html#VRage_ModAPI_IMyEntity_DebugDrawInvalidTriangles)
+
+[IMyEntity.EnableColorMaskForSubparts(Boolean)](VRage.ModAPI.IMyEntity.html#VRage_ModAPI_IMyEntity_EnableColorMaskForSubparts_System_Boolean_)
+
+[IMyEntity.SetColorMaskForSubparts(Vector3)](VRage.ModAPI.IMyEntity.html#VRage_ModAPI_IMyEntity_SetColorMaskForSubparts_VRageMath_Vector3_)
+
+[IMyEntity.SetTextureChangesForSubparts(Dictionary<MyStringId, MyTextureChange>)](VRage.ModAPI.IMyEntity.html#VRage_ModAPI_IMyEntity_SetTextureChangesForSubparts_System_Collections_Generic_Dictionary_VRage_Utils_MyStringId_VRageRender_Messages_MyTextureChange__)
+
+[IMyEntity.SetTextureChangesForSubparts(Dictionary<String, MyTextureChange>)](VRage.ModAPI.IMyEntity.html#VRage_ModAPI_IMyEntity_SetTextureChangesForSubparts_System_Collections_Generic_Dictionary_System_String_VRageRender_Messages_MyTextureChange__)
+
+[IMyEntity.SetEmissiveParts(String, Color, Single)](VRage.ModAPI.IMyEntity.html#VRage_ModAPI_IMyEntity_SetEmissiveParts_System_String_VRageMath_Color_System_Single_)
+
+[IMyEntity.SetEmissivePartsForSubparts(String, Color, Single)](VRage.ModAPI.IMyEntity.html#VRage_ModAPI_IMyEntity_SetEmissivePartsForSubparts_System_String_VRageMath_Color_System_Single_)
+
+[IMyEntity.GetDistanceBetweenCameraAndBoundingSphere()](VRage.ModAPI.IMyEntity.html#VRage_ModAPI_IMyEntity_GetDistanceBetweenCameraAndBoundingSphere)
+
+[IMyEntity.GetDistanceBetweenCameraAndPosition()](VRage.ModAPI.IMyEntity.html#VRage_ModAPI_IMyEntity_GetDistanceBetweenCameraAndPosition)
+
+[IMyEntity.GetLargestDistanceBetweenCameraAndBoundingSphere()](VRage.ModAPI.IMyEntity.html#VRage_ModAPI_IMyEntity_GetLargestDistanceBetweenCameraAndBoundingSphere)

@@ -1,0 +1,68 @@
+{"id": "param.boolean.v1", "type": "boolean", "values": [true, false], "default": true, "validation": "bool_conversion", "examples": ["on", "off", "true", "false", "yes", "no", "1", "0"]}
+{"id": "param.percentage.v1", "type": "percentage", "range": {"min": 0, "max": 100}, "units": "%", "precision": 1, "default": 100, "validation": "clamp_to_range", "examples": ["50%", "75", "100"]}
+{"id": "param.float.v1", "type": "float", "precision": 2, "validation": "float_conversion", "examples": ["1.5", "3.14", "0.01"]}
+{"id": "param.float_clamped.v1", "type": "float", "validation": "clamp_to_property_range", "description": "Float clamped to block property limits", "examples": ["2.5 for intensity", "15.0 for radius"]}
+{"id": "param.integer.v1", "type": "integer", "validation": "int_conversion", "examples": ["1", "10", "999"]}
+{"id": "param.positive_integer.v1", "type": "integer", "range": {"min": 1}, "validation": "positive_int", "examples": ["1", "5", "100"]}
+{"id": "param.coordinate.v1", "type": "coordinate", "format": "GPS:Name:X:Y:Z:", "validation": "gps_format", "examples": ["GPS:Base:0:0:0:", "GPS:Asteroid:12345:67890:-1000:"]}
+{"id": "param.coordinate_relative.v1", "type": "coordinate", "format": "~X ~Y ~Z", "validation": "relative_coordinate", "examples": ["~10 ~0 ~5", "~-50 ~100 ~0"]}
+{"id": "param.duration_seconds.v1", "type": "duration", "units": "seconds", "range": {"min": 0.1, "max": 3600}, "validation": "duration_format", "examples": ["5s", "1.5", "30"]}
+{"id": "param.duration_minutes.v1", "type": "duration", "units": "minutes", "range": {"min": 0.1, "max": 60}, "validation": "duration_format", "examples": ["5m", "1.5m", "30m"]}
+{"id": "param.distance_meters.v1", "type": "distance", "units": "meters", "range": {"min": 0.1, "max": 50000}, "validation": "distance_format", "examples": ["10m", "1.5", "500"]}
+{"id": "param.distance_kilometers.v1", "type": "distance", "units": "kilometers", "range": {"min": 0.001, "max": 50}, "validation": "distance_format", "examples": ["5km", "1.2", "0.5"]}
+{"id": "param.angle_degrees.v1", "type": "angle", "units": "degrees", "range": {"min": -360, "max": 360}, "validation": "angle_format", "examples": ["90°", "45", "-180"]}
+{"id": "param.angle_radians.v1", "type": "angle", "units": "radians", "range": {"min": -6.28, "max": 6.28}, "validation": "radian_format", "examples": ["1.57", "3.14", "-1.57"]}
+{"id": "param.speed_mps.v1", "type": "speed", "units": "m/s", "range": {"min": 0, "max": 104.4}, "validation": "speed_format", "examples": ["10m/s", "5.5", "100"]}
+{"id": "param.rpm.v1", "type": "rotation_speed", "units": "RPM", "range": {"min": -30, "max": 30}, "validation": "rpm_format", "examples": ["5rpm", "10", "-2.5"]}
+{"id": "param.power_watts.v1", "type": "power", "units": "W", "validation": "power_format", "multipliers": ["kW", "MW", "GW"], "examples": ["1000W", "1kW", "0.5MW"]}
+{"id": "param.power_percentage.v1", "type": "power", "units": "%", "range": {"min": 0, "max": 100}, "validation": "power_percentage", "examples": ["50%", "75", "100"]}
+{"id": "param.volume_liters.v1", "type": "volume", "units": "L", "validation": "volume_format", "examples": ["1000L", "2.5", "500"]}
+{"id": "param.mass_kg.v1", "type": "mass", "units": "kg", "validation": "mass_format", "examples": ["100kg", "2500", "1.5"]}
+{"id": "param.color_rgb.v1", "type": "color", "format": "R,G,B", "range": {"min": 0, "max": 255}, "validation": "rgb_format", "examples": ["255,0,0", "128,128,128", "0,255,255"]}
+{"id": "param.color_hex.v1", "type": "color", "format": "#RRGGBB", "validation": "hex_color", "examples": ["#FF0000", "#808080", "#00FFFF"]}
+{"id": "param.color_name.v1", "type": "color", "format": "color_name", "validation": "color_name_lookup", "examples": ["red", "blue", "white", "yellow", "green", "orange", "purple", "pink"]}
+{"id": "param.item_name.v1", "type": "item", "validation": "item_exists", "examples": ["Iron Ore", "Steel Plate", "Computer", "Uranium Ingot"]}
+{"id": "param.item_amount.v1", "type": "item_quantity", "validation": "positive_number", "examples": ["100", "2.5", "1000"]}
+{"id": "param.blueprint_name.v1", "type": "blueprint", "validation": "blueprint_exists", "examples": ["Large Cargo Container", "Small Reactor", "Advanced Rotor"]}
+{"id": "param.block_name.v1", "type": "block_reference", "validation": "block_exists", "examples": ["Reactor 1", "Main Battery", "Forward Thrusters"]}
+{"id": "param.group_name.v1", "type": "group_reference", "validation": "group_exists", "examples": ["Main Lights", "Defense Turrets", "Mining Equipment"]}
+{"id": "param.message_text.v1", "type": "text", "max_length": 100, "validation": "text_cleanup", "examples": ["Hello World", "Docking initiated", "Power low"]}
+{"id": "param.ai_behavior.v1", "type": "enum", "values": ["Passive", "Defensive", "Offensive", "Patrol", "Mining"], "validation": "ai_behavior_valid", "examples": ["Defensive", "Patrol", "Mining"]}
+{"id": "param.battery_mode.v1", "type": "enum", "values": ["Auto", "Recharge", "Discharge"], "validation": "battery_mode_valid", "examples": ["Auto", "Recharge", "Discharge"]}
+{"id": "param.charge_mode.v1", "type": "enum", "values": ["Auto", "Recharge", "Discharge"], "validation": "charge_mode_valid", "examples": ["Auto", "Recharge", "Discharge"]}
+{"id": "param.door_action.v1", "type": "enum", "values": ["Open", "Close", "Toggle"], "validation": "door_action_valid", "examples": ["Open", "Close", "Toggle"]}
+{"id": "param.piston_action.v1", "type": "enum", "values": ["Extend", "Retract", "Stop"], "validation": "piston_action_valid", "examples": ["Extend", "Retract", "Stop"]}
+{"id": "param.rotor_direction.v1", "type": "enum", "values": ["Clockwise", "Counterclockwise", "Stop"], "validation": "rotor_direction_valid", "examples": ["Clockwise", "Counterclockwise", "Stop"]}
+{"id": "param.light_intensity.v1", "type": "float", "range": {"min": 0.5, "max": 10.0}, "units": "intensity", "validation": "intensity_range", "examples": ["1.0", "5.5", "10.0"]}
+{"id": "param.light_radius.v1", "type": "float", "range": {"min": 1, "max": 20}, "units": "meters", "validation": "radius_range", "examples": ["5", "10.5", "20"]}
+{"id": "param.spotlight_radius.v1", "type": "float", "range": {"min": 10, "max": 160}, "units": "meters", "validation": "spotlight_radius_range", "examples": ["50", "100", "160"]}
+{"id": "param.light_falloff.v1", "type": "float", "range": {"min": 0, "max": 3}, "units": "falloff", "validation": "falloff_range", "examples": ["1", "2", "3"]}
+{"id": "param.blink_interval.v1", "type": "float", "range": {"min": 0, "max": 30}, "units": "seconds", "validation": "blink_interval", "examples": ["0", "1.5", "5"]}
+{"id": "param.blink_length.v1", "type": "percentage", "range": {"min": 0, "max": 100}, "units": "%", "validation": "percentage_range", "examples": ["50%", "75", "100"]}
+{"id": "param.sensor_range.v1", "type": "float", "range": {"min": 0.1, "max": 50}, "units": "meters", "validation": "sensor_range", "examples": ["1", "25", "50"]}
+{"id": "param.turret_range.v1", "type": "float", "range": {"min": 1, "max": 800}, "units": "meters", "validation": "turret_range", "examples": ["100", "400", "800"]}
+{"id": "param.antenna_range.v1", "type": "float", "range": {"min": 1, "max": 50000}, "units": "meters", "validation": "antenna_range", "examples": ["1000", "10000", "50000"]}
+{"id": "param.piston_velocity.v1", "type": "float", "range": {"min": 0.01, "max": 5.0}, "units": "m/s", "validation": "piston_velocity", "examples": ["0.5", "2.5", "5.0"]}
+{"id": "param.piston_distance.v1", "type": "float", "range": {"min": 0, "max": 10}, "units": "meters", "validation": "piston_distance", "examples": ["0", "5", "10"]}
+{"id": "param.rotor_velocity.v1", "type": "float", "range": {"min": -30, "max": 30}, "units": "RPM", "validation": "rotor_velocity", "examples": ["-10", "5", "30"]}
+{"id": "param.rotor_angle.v1", "type": "float", "range": {"min": -360, "max": 360}, "units": "degrees", "validation": "rotor_angle", "examples": ["-90", "45", "360"]}
+{"id": "param.thrust_override.v1", "type": "percentage", "range": {"min": 0, "max": 100}, "units": "%", "validation": "thrust_percentage", "examples": ["0%", "50", "100"]}
+{"id": "param.gyro_power.v1", "type": "percentage", "range": {"min": 0, "max": 100}, "units": "%", "validation": "gyro_percentage", "examples": ["0%", "75", "100"]}
+{"id": "param.conveyor_item.v1", "type": "item_filter", "validation": "conveyor_item_valid", "examples": ["Iron Ore", "Steel Plate", "*Ingot", "Components"]}
+{"id": "param.priority_level.v1", "type": "enum", "values": ["High", "Medium", "Low"], "validation": "priority_valid", "examples": ["High", "Medium", "Low"]}
+{"id": "param.faction_tag.v1", "type": "text", "max_length": 3, "validation": "faction_tag_format", "examples": ["RED", "BLU", "IND"]}
+{"id": "param.waypoint_name.v1", "type": "text", "max_length": 50, "validation": "waypoint_name_valid", "examples": ["Home Base", "Mining Site Alpha", "Patrol Point 1"]}
+{"id": "param.timer_delay.v1", "type": "float", "range": {"min": 1, "max": 3600}, "units": "seconds", "validation": "timer_delay", "examples": ["1", "30", "300"]}
+{"id": "param.production_amount.v1", "type": "float", "range": {"min": 0.01, "max": 1000000}, "validation": "production_amount", "examples": ["1", "100", "1000"]}
+{"id": "param.stockpile_mode.v1", "type": "boolean", "values": [true, false], "default": false, "validation": "stockpile_bool", "examples": ["on", "off", "enable", "disable"]}
+{"id": "param.auto_refill.v1", "type": "boolean", "values": [true, false], "default": false, "validation": "auto_refill_bool", "examples": ["on", "off", "enable", "disable"]}
+{"id": "param.collect_all.v1", "type": "boolean", "values": [true, false], "default": true, "validation": "collect_bool", "examples": ["on", "off", "true", "false"]}
+{"id": "param.use_conveyor.v1", "type": "boolean", "values": [true, false], "default": true, "validation": "conveyor_bool", "examples": ["on", "off", "yes", "no"]}
+{"id": "param.show_on_hud.v1", "type": "boolean", "values": [true, false], "default": false, "validation": "hud_bool", "examples": ["on", "off", "show", "hide"]}
+{"id": "param.detect_players.v1", "type": "boolean", "values": [true, false], "default": true, "validation": "detect_bool", "examples": ["on", "off", "yes", "no"]}
+{"id": "param.detect_friendly.v1", "type": "boolean", "values": [true, false], "default": false, "validation": "detect_bool", "examples": ["on", "off", "yes", "no"]}
+{"id": "param.detect_enemy.v1", "type": "boolean", "values": [true, false], "default": true, "validation": "detect_bool", "examples": ["on", "off", "yes", "no"]}
+{"id": "param.detect_neutral.v1", "type": "boolean", "values": [true, false], "default": false, "validation": "detect_bool", "examples": ["on", "off", "yes", "no"]}
+{"id": "param.detect_asteroids.v1", "type": "boolean", "values": [true, false], "default": false, "validation": "detect_bool", "examples": ["on", "off", "yes", "no"]}
+{"id": "param.detect_floating.v1", "type": "boolean", "values": [true, false], "default": false, "validation": "detect_bool", "examples": ["on", "off", "yes", "no"]}
+{"id": "param.detect_grids.v1", "type": "boolean", "values": [true, false], "default": true, "validation": "detect_bool", "examples": ["on", "off", "yes", "no"]}

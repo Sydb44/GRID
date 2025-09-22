@@ -1,0 +1,63 @@
+---
+title: "Refinery"
+url: "https://spaceengineers.wiki.gg/wiki/Refinery"
+category: "Production"
+wiki_page: "Refinery"
+includes_blocks: true
+---
+
+# Refinery - Official Space Engineers Wiki
+
+| Refinery |     |
+| --- | --- |
+| [![Icon Block Refinery.png](https://spaceengineers.wiki.gg/images/6/6a/Icon_Block_Refinery.png?a9b68a)](https://spaceengineers.wiki.gg/wiki/File:Icon_Block_Refinery.png) |     |
+| * * * |     |
+| **Function:** | Advanced refineries refine all ores into ingots.They can be upgrade... |
+| **DLC?** | Vanilla |
+| * * * |     |
+| **Fits large grid** |     |
+| Mass: | 25328.0 kg |
+| Hitpoints: | 123660 |
+| PCU: | 90  |
+| Size: | 2x4x2 |
+| Time to Build: | 90 sec |
+| * * * |     |
+| _Data Controls:_ | \[[purge](https://spaceengineers.wiki.gg/wiki/Refinery?action=purge)\] ([?](https://spaceengineers.wiki.gg/wiki/Template:Info_Block))) |
+|     |     |
+
+The  [![Icon Block Refinery.png](https://spaceengineers.wiki.gg/images/thumb/6/6a/Icon_Block_Refinery.png/21px-Icon_Block_Refinery.png?a9b68a)](https://spaceengineers.wiki.gg/wiki/Refinery "Refinery") Refinery is a mid-game and late-game [production](https://spaceengineers.wiki.gg/wiki/Production "Production") [block](https://spaceengineers.wiki.gg/wiki/Block "Block") in Space Engineers, necessary for converting raw [ores](https://spaceengineers.wiki.gg/wiki/Ore "Ore") into useful refined [materials](https://spaceengineers.wiki.gg/wiki/Material "Material").
+
+In contrast to the similar mid-game focused  [![Icon Block Basic Refinery.png](https://spaceengineers.wiki.gg/images/thumb/d/d0/Icon_Block_Basic_Refinery.png/21px-Icon_Block_Basic_Refinery.png?b697c6)](https://spaceengineers.wiki.gg/wiki/Basic_Refinery "Basic Refinery") [Basic Refinery](https://spaceengineers.wiki.gg/wiki/Basic_Refinery "Basic Refinery") which cannot process platinum, uranium, silver, and gold, the Refinery can process all ore types. The Refinery has much higher construction costs than the basic one, however, it can process ores faster, more efficiently, and uses less power.
+
+The  [![Icon Block Industrial Refinery.png](https://spaceengineers.wiki.gg/images/thumb/f/f3/Icon_Block_Industrial_Refinery.png/21px-Icon_Block_Industrial_Refinery.png?d58a52)](https://spaceengineers.wiki.gg/wiki/Industrial_Refinery "Industrial Refinery") [Industrial Refinery](https://spaceengineers.wiki.gg/wiki/Industrial_Refinery "Industrial Refinery") is a reskin of this block with the same size, recipe, and functionality; you can only build it if you have purchased the [Heavy Industry Pack](https://spaceengineers.wiki.gg/wiki/Heavy_Industry_Pack "Heavy Industry Pack") DLC, but the owner can let every use it.
+
+## Usage
+
+The Refinery pulls raw [ores](https://spaceengineers.wiki.gg/wiki/Ore "Ore") into its inventory and turns them into refined [materials](https://spaceengineers.wiki.gg/wiki/Material "Material") (which then the  [![Icon Block Assembler.png](https://spaceengineers.wiki.gg/images/thumb/c/cd/Icon_Block_Assembler.png/21px-Icon_Block_Assembler.png?ceefab)](https://spaceengineers.wiki.gg/wiki/Assembler "Assembler") [Assembler](https://spaceengineers.wiki.gg/wiki/Assembler "Assembler") can use to create [components](https://spaceengineers.wiki.gg/wiki/Component "Component") and [tools](https://spaceengineers.wiki.gg/wiki/Tool "Tool")). To begin the process, simply place the ores into the Refinery’s input (top) inventory slots, or connect it to a [conveyor system](https://spaceengineers.wiki.gg/wiki/Conveyor_system "Conveyor system") containing ores.
+
+After the  [![Icon Block Medical Room.png](https://spaceengineers.wiki.gg/images/thumb/4/42/Icon_Block_Medical_Room.png/21px-Icon_Block_Medical_Room.png?a9d978)](https://spaceengineers.wiki.gg/wiki/Medical_Room "Medical Room") [Medical Room](https://spaceengineers.wiki.gg/wiki/Medical_Room "Medical Room"), the Refinery is a secondary raid target in an enemy vessel or station, due to the immense amount of materials that can be salvaged from it, and its likelihood of containing valuable minerals inside of it, like  [![Icon Item Platinum Ore.png](https://spaceengineers.wiki.gg/images/thumb/5/52/Icon_Item_Platinum_Ore.png/21px-Icon_Item_Platinum_Ore.png?587799)](https://spaceengineers.wiki.gg/wiki/Platinum_Ore "Platinum Ore") [Platinum](https://spaceengineers.wiki.gg/wiki/Platinum_Ore "Platinum Ore") or  [![Icon Item Uranium Ore.png](https://spaceengineers.wiki.gg/images/thumb/4/40/Icon_Item_Uranium_Ore.png/21px-Icon_Item_Uranium_Ore.png?f793b5)](https://spaceengineers.wiki.gg/wiki/Uranium_Ore "Uranium Ore") [Uranium](https://spaceengineers.wiki.gg/wiki/Uranium_Ore "Uranium Ore").
+
+Refineries’ large [ports](https://spaceengineers.wiki.gg/wiki/Port "Port") allow all items to pass through, so it can be anywhere in your conveyor system.
+
+### What's the ore-to-material conversion rate?
+
+During the conversion process from Ores to Ingots, some of the mass of the raw material is lost. For example; 1000 kg of Uranium Ore will not give you 1000 kg of Uranium Ingots. The following table will present the percentage of how much of the raw material gets converted into the refined product.
+
+| Raw material ([ores](https://spaceengineers.wiki.gg/wiki/Ores "Ores")) | Conversion ratio | Refined material |
+| --- | --- | --- |
+| [![Icon Item Stone.png](https://spaceengineers.wiki.gg/images/thumb/0/02/Icon_Item_Stone.png/21px-Icon_Item_Stone.png?38f36b)](https://spaceengineers.wiki.gg/wiki/Stone "Stone") [Stone](https://spaceengineers.wiki.gg/wiki/Stone "Stone") | 1.4% | [![Icon Item Gravel.png](https://spaceengineers.wiki.gg/images/thumb/4/48/Icon_Item_Gravel.png/21px-Icon_Item_Gravel.png?a39670)](https://spaceengineers.wiki.gg/wiki/Gravel "Gravel") [Gravel](https://spaceengineers.wiki.gg/wiki/Gravel "Gravel") |
+| 3%  | [![Icon Item Iron Ingot.png](https://spaceengineers.wiki.gg/images/thumb/e/e7/Icon_Item_Iron_Ingot.png/21px-Icon_Item_Iron_Ingot.png?388ec0)](https://spaceengineers.wiki.gg/wiki/Iron_Ingot "Iron Ingot") [Iron Ingot](https://spaceengineers.wiki.gg/wiki/Iron_Ingot "Iron Ingot") |
+| 0.24% | [![Icon Item Nickel Ingot.png](https://spaceengineers.wiki.gg/images/thumb/4/4b/Icon_Item_Nickel_Ingot.png/21px-Icon_Item_Nickel_Ingot.png?e67f47)](https://spaceengineers.wiki.gg/wiki/Nickel_Ingot "Nickel Ingot") [Nickel Ingot](https://spaceengineers.wiki.gg/wiki/Nickel_Ingot "Nickel Ingot") |
+| 0.4% | [![Icon Item Silicon Wafer.png](https://spaceengineers.wiki.gg/images/thumb/c/cf/Icon_Item_Silicon_Wafer.png/21px-Icon_Item_Silicon_Wafer.png?e4ed69)](https://spaceengineers.wiki.gg/wiki/Silicon_Wafer "Silicon Wafer") [Silicon Wafer](https://spaceengineers.wiki.gg/wiki/Silicon_Wafer "Silicon Wafer") |
+| [![Icon Item Scrap Metal.png](https://spaceengineers.wiki.gg/images/thumb/5/5d/Icon_Item_Scrap_Metal.png/21px-Icon_Item_Scrap_Metal.png?9b5187)](https://spaceengineers.wiki.gg/wiki/Scrap_Metal "Scrap Metal") [Scrap Metal](https://spaceengineers.wiki.gg/wiki/Scrap_Metal "Scrap Metal") | 80% | [![Icon Item Iron Ingot.png](https://spaceengineers.wiki.gg/images/thumb/e/e7/Icon_Item_Iron_Ingot.png/21px-Icon_Item_Iron_Ingot.png?388ec0)](https://spaceengineers.wiki.gg/wiki/Iron_Ingot "Iron Ingot") [Iron Ingot](https://spaceengineers.wiki.gg/wiki/Iron_Ingot "Iron Ingot") |
+| [![Icon Item Iron Ore.png](https://spaceengineers.wiki.gg/images/thumb/7/71/Icon_Item_Iron_Ore.png/21px-Icon_Item_Iron_Ore.png?5a0907)](https://spaceengineers.wiki.gg/wiki/Iron_Ore "Iron Ore") [Iron](https://spaceengineers.wiki.gg/wiki/Iron_Ore "Iron Ore") | 70% | [![Icon Item Iron Ingot.png](https://spaceengineers.wiki.gg/images/thumb/e/e7/Icon_Item_Iron_Ingot.png/21px-Icon_Item_Iron_Ingot.png?388ec0)](https://spaceengineers.wiki.gg/wiki/Iron_Ingot "Iron Ingot") [Iron Ingot](https://spaceengineers.wiki.gg/wiki/Iron_Ingot "Iron Ingot") |
+| [![Icon Item Silicon Ore.png](https://spaceengineers.wiki.gg/images/thumb/7/72/Icon_Item_Silicon_Ore.png/21px-Icon_Item_Silicon_Ore.png?3f4a28)](https://spaceengineers.wiki.gg/wiki/Silicon_Ore "Silicon Ore") [Silicon](https://spaceengineers.wiki.gg/wiki/Silicon_Ore "Silicon Ore") | 70% | [![Icon Item Silicon Wafer.png](https://spaceengineers.wiki.gg/images/thumb/c/cf/Icon_Item_Silicon_Wafer.png/21px-Icon_Item_Silicon_Wafer.png?e4ed69)](https://spaceengineers.wiki.gg/wiki/Silicon_Wafer "Silicon Wafer") [Silicon Wafer](https://spaceengineers.wiki.gg/wiki/Silicon_Wafer "Silicon Wafer") |
+| [![Icon Item Nickel Ore.png](https://spaceengineers.wiki.gg/images/thumb/1/1b/Icon_Item_Nickel_Ore.png/21px-Icon_Item_Nickel_Ore.png?3fd7c8)](https://spaceengineers.wiki.gg/wiki/Nickel_Ore "Nickel Ore") [Nickel](https://spaceengineers.wiki.gg/wiki/Nickel_Ore "Nickel Ore") | 40% | [![Icon Item Nickel Ingot.png](https://spaceengineers.wiki.gg/images/thumb/4/4b/Icon_Item_Nickel_Ingot.png/21px-Icon_Item_Nickel_Ingot.png?e67f47)](https://spaceengineers.wiki.gg/wiki/Nickel_Ingot "Nickel Ingot") [Nickel Ingot](https://spaceengineers.wiki.gg/wiki/Nickel_Ingot "Nickel Ingot") |
+| [![Icon Item Cobalt Ore.png](https://spaceengineers.wiki.gg/images/thumb/f/f3/Icon_Item_Cobalt_Ore.png/21px-Icon_Item_Cobalt_Ore.png?917984)](https://spaceengineers.wiki.gg/wiki/Cobalt_Ore "Cobalt Ore") [Cobalt](https://spaceengineers.wiki.gg/wiki/Cobalt_Ore "Cobalt Ore") | 30% | [![Icon Item Cobalt Ingot.png](https://spaceengineers.wiki.gg/images/thumb/e/e2/Icon_Item_Cobalt_Ingot.png/21px-Icon_Item_Cobalt_Ingot.png?142d75)](https://spaceengineers.wiki.gg/wiki/Cobalt_Ingot "Cobalt Ingot") [Cobalt Ingot](https://spaceengineers.wiki.gg/wiki/Cobalt_Ingot "Cobalt Ingot") |
+| [![Icon Item Silver Ore.png](https://spaceengineers.wiki.gg/images/thumb/a/a6/Icon_Item_Silver_Ore.png/21px-Icon_Item_Silver_Ore.png?d3f160)](https://spaceengineers.wiki.gg/wiki/Silver_Ore "Silver Ore") [Silver](https://spaceengineers.wiki.gg/wiki/Silver_Ore "Silver Ore") | 10% | [![Icon Item Silver Ingot.png](https://spaceengineers.wiki.gg/images/thumb/e/eb/Icon_Item_Silver_Ingot.png/21px-Icon_Item_Silver_Ingot.png?fd2cc7)](https://spaceengineers.wiki.gg/wiki/Silver_Ingot "Silver Ingot") [Silver Ingot](https://spaceengineers.wiki.gg/wiki/Silver_Ingot "Silver Ingot") |
+| [![Icon Item Gold Ore.png](https://spaceengineers.wiki.gg/images/thumb/2/25/Icon_Item_Gold_Ore.png/21px-Icon_Item_Gold_Ore.png?4ada1b)](https://spaceengineers.wiki.gg/wiki/Gold_Ore "Gold Ore") [Gold](https://spaceengineers.wiki.gg/wiki/Gold_Ore "Gold Ore") | 1%  | [![Icon Item Gold Ingot.png](https://spaceengineers.wiki.gg/images/thumb/d/d6/Icon_Item_Gold_Ingot.png/21px-Icon_Item_Gold_Ingot.png?9fb6c7)](https://spaceengineers.wiki.gg/wiki/Gold_Ingot "Gold Ingot") [Gold Ingot](https://spaceengineers.wiki.gg/wiki/Gold_Ingot "Gold Ingot") |
+| [![Icon Item Uranium Ore.png](https://spaceengineers.wiki.gg/images/thumb/4/40/Icon_Item_Uranium_Ore.png/21px-Icon_Item_Uranium_Ore.png?f793b5)](https://spaceengineers.wiki.gg/wiki/Uranium_Ore "Uranium Ore") [Uranium](https://spaceengineers.wiki.gg/wiki/Uranium_Ore "Uranium Ore") | 1%  | [![Icon Item Uranium Ingot.png](https://spaceengineers.wiki.gg/images/thumb/d/dd/Icon_Item_Uranium_Ingot.png/21px-Icon_Item_Uranium_Ingot.png?750d14)](https://spaceengineers.wiki.gg/wiki/Uranium_Ingot "Uranium Ingot") [Uranium Ingot](https://spaceengineers.wiki.gg/wiki/Uranium_Ingot "Uranium Ingot") |
+| [![Icon Item Magnesium Ore.png](https://spaceengineers.wiki.gg/images/thumb/c/c5/Icon_Item_Magnesium_Ore.png/21px-Icon_Item_Magnesium_Ore.png?308afb)](https://spaceengineers.wiki.gg/wiki/Magnesium_Ore "Magnesium Ore") [Magnesium](https://spaceengineers.wiki.gg/wiki/Magnesium_Ore "Magnesium Ore") | 0.7% | [![Icon Item Magnesium Powder.png](https://spaceengineers.wiki.gg/images/thumb/a/ab/Icon_Item_Magnesium_Powder.png/21px-Icon_Item_Magnesium_Powder.png?56ae33)](https://spaceengineers.wiki.gg/wiki/Magnesium_Powder "Magnesium Powder") [Magnesium Powder](https://spaceengineers.wiki.gg/wiki/Magnesium_Powder "Magnesium Powder") |
+| [![Icon Item Platinum Ore.png](https://spaceengineers.wiki.gg/images/thumb/5/52/Icon_Item_Platinum_Ore.png/21px-Icon_Item_Platinum_Ore.png?587799)](https://spaceengineers.wiki.gg/wiki/Platinum_Ore "Platinum Ore") [Platinum](https://spaceengineers.wiki.gg/wiki/Platinum_Ore "Platinum Ore") | 0.5% | [![Icon Item Platinum Ingot.png](https://spaceengineers.wiki.gg/images/thumb/4/4c/Icon_Item_Platinum_Ingot.png/21px-Icon_Item_Platinum_Ingot.png?aea3a0)](https://spaceengineers.wiki.gg/wiki/Platinum_Ingot "Platinum Ingot") [Platinum Ingot](https://spaceengineers.wiki.gg/wiki/Platinum_Ingot "Platinum Ingot") |
+
+To clarify, this means:

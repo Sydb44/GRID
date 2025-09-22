@@ -1,0 +1,17 @@
+## Recipe
+
+| [![Icon Block Fighter Cockpit.png](https://spaceengineers.wiki.gg/images/thumb/Icon_Block_Fighter_Cockpit.png/21px-Icon_Block_Fighter_Cockpit.png?e570b4)](https://spaceengineers.wiki.gg/wiki/Fighter_Cockpit "Fighter Cockpit") Fighter Cockpit |     |     |     |     |
+| --- | --- | --- | --- | --- |
+| Component | Large Ship/Station  <br>Required | Large Ship/Station  <br>Optional | Small Ship  <br>Required | Small Ship  <br>Optional |
+| [![Icon Item Steel Plate.png](https://spaceengineers.wiki.gg/images/thumb/Icon_Item_Steel_Plate.png/21px-Icon_Item_Steel_Plate.png?437e3a)](https://spaceengineers.wiki.gg/wiki/Steel_Plate "Steel Plate") [Steel Plate](https://spaceengineers.wiki.gg/wiki/Steel_Plate "Steel Plate") | —   | —   | 10  | 10  |
+| [![Icon Item Motor.png](https://spaceengineers.wiki.gg/images/thumb/Icon_Item_Motor.png/21px-Icon_Item_Motor.png?4a2f3f)](https://spaceengineers.wiki.gg/wiki/Motor "Motor") [Motor](https://spaceengineers.wiki.gg/wiki/Motor "Motor") | —   | —   | 1   | —   |
+| [![Icon Item Metal Grid.png](https://spaceengineers.wiki.gg/images/thumb/Icon_Item_Metal_Grid.png/21px-Icon_Item_Metal_Grid.png?c674cf)](https://spaceengineers.wiki.gg/wiki/Metal_Grid "Metal Grid") [Metal Grid](https://spaceengineers.wiki.gg/wiki/Metal_Grid "Metal Grid") | —   | —   | 10  | —   |
+| [![Icon Item Interior Plate.png](https://spaceengineers.wiki.gg/images/thumb/Icon_Item_Interior_Plate.png/21px-Icon_Item_Interior_Plate.png?d80f8e)](https://spaceengineers.wiki.gg/wiki/Interior_Plate "Interior Plate") [Interior Plate](https://spaceengineers.wiki.gg/wiki/Interior_Plate "Interior Plate") | —   | —   | 15  | —   |
+| [![Icon Item Display.png](https://spaceengineers.wiki.gg/images/thumb/Icon_Item_Display.png/21px-Icon_Item_Display.png?a444bc)](https://spaceengineers.wiki.gg/wiki/Display "Display") [Display](https://spaceengineers.wiki.gg/wiki/Display "Display") | —   | —   | 4   | —   |
+| [![Icon Item Construction Comp..png](https://spaceengineers.wiki.gg/images/thumb/Icon_Item_Construction_Comp..png/21px-Icon_Item_Construction_Comp..png?cdc26f)](https://spaceengineers.wiki.gg/wiki/Construction_Comp. "Construction Comp.") [Construction Comp.](https://spaceengineers.wiki.gg/wiki/Construction_Comp. "Construction Comp.") | —   | —   | 20  | —   |
+| [![Icon Item Computer.png](https://spaceengineers.wiki.gg/images/thumb/Icon_Item_Computer.png/21px-Icon_Item_Computer.png?65c1a4)](https://spaceengineers.wiki.gg/wiki/Computer "Computer") [Computer](https://spaceengineers.wiki.gg/wiki/Computer "Computer") | —   | —   | 20  | —   |
+| [![Icon Item Bulletproof Glass.png](https://spaceengineers.wiki.gg/images/thumb/Icon_Item_Bulletproof_Glass.png/21px-Icon_Item_Bulletproof_Glass.png?1941ea)](https://spaceengineers.wiki.gg/wiki/Bulletproof_Glass "Bulletproof Glass") [Bulletproof Glass](https://spaceengineers.wiki.gg/wiki/Bulletproof_Glass "Bulletproof Glass") | —   | —   | 40  | —   |
+
+## References
+
+1.  [↑](#cite_ref-1 "Jump up") [https://support.keenswh.com/spaceengineers/pc/topic/another-ship-has-taken-control-problem-and-solution](https://support.keenswh.com/spaceengineers/pc/topic/another-ship-has-taken-control-problem-and-solution) [https://support.keenswh.com/spaceengineers/pc/topic/another-grid-has-taken-control](https://support.keenswh.com/spaceengineers/pc/topic/another-grid-has-taken-control)

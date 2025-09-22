@@ -1,0 +1,37 @@
+[MyEntityComponentBase.OnBeforeRemovedFromContainer()](VRage.Game.Components.MyEntityComponentBase.html#VRage_Game_Components_MyEntityComponentBase_OnBeforeRemovedFromContainer)
+
+#### OnRemovedFromScene()
+
+##### Declaration
+
+```
+public override void OnRemovedFromScene()
+```
+
+##### Overrides
+
+[MyComponentBase.OnRemovedFromScene()](VRage.Game.Components.MyComponentBase.html#VRage_Game_Components_MyComponentBase_OnRemovedFromScene)
+
+### Implements
+
+[IMyCameraController](VRage.Game.ModAPI.Interfaces.IMyCameraController.html)
+
+[IMyControllableEntity](Sandbox.Game.Entities.IMyControllableEntity.html)
+
+[IMyControllableEntity](VRage.Game.ModAPI.Interfaces.IMyControllableEntity.html)
+
+[IMyRespawnComponent](Sandbox.ModAPI.IMyRespawnComponent.html)
+
+### Extension Methods
+
+[MyEntityContainerEventExtensions.RegisterForEntityEvent(MyEntityComponentBase, MyStringHash, MyEntityContainerEventExtensions.EntityEventHandler)](VRage.Game.Components.MyEntityContainerEventExtensions.html#VRage_Game_Components_MyEntityContainerEventExtensions_RegisterForEntityEvent_VRage_Game_Components_MyEntityComponentBase_VRage_Utils_MyStringHash_VRage_Game_Components_MyEntityContainerEventExtensions_EntityEventHandler_)
+
+[MyEntityContainerEventExtensions.RegisterForEntityEvent(MyEntityComponentBase, MyEntity, MyStringHash, MyEntityContainerEventExtensions.EntityEventHandler)](VRage.Game.Components.MyEntityContainerEventExtensions.html#VRage_Game_Components_MyEntityContainerEventExtensions_RegisterForEntityEvent_VRage_Game_Components_MyEntityComponentBase_VRage_Game_Entity_MyEntity_VRage_Utils_MyStringHash_VRage_Game_Components_MyEntityContainerEventExtensions_EntityEventHandler_)
+
+[MyEntityContainerEventExtensions.UnregisterForEntityEvent(MyEntityComponentBase, MyEntity, MyStringHash)](VRage.Game.Components.MyEntityContainerEventExtensions.html#VRage_Game_Components_MyEntityContainerEventExtensions_UnregisterForEntityEvent_VRage_Game_Components_MyEntityComponentBase_VRage_Game_Entity_MyEntity_VRage_Utils_MyStringHash_)
+
+[MyEntityContainerEventExtensions.RaiseEntityEvent(MyEntityComponentBase, MyStringHash, MyEntityContainerEventExtensions.EntityEventParams)](VRage.Game.Components.MyEntityContainerEventExtensions.html#VRage_Game_Components_MyEntityContainerEventExtensions_RaiseEntityEvent_VRage_Game_Components_MyEntityComponentBase_VRage_Utils_MyStringHash_VRage_Game_Components_MyEntityContainerEventExtensions_EntityEventParams_)
+
+_☀_
+
+_☾_

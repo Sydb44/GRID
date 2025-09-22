@@ -1,0 +1,103 @@
+[IMyEntity.HasInventory](VRage.Game.ModAPI.Ingame.IMyEntity.html#VRage_Game_ModAPI_Ingame_IMyEntity_HasInventory)
+
+[IMyEntity.InventoryCount](VRage.Game.ModAPI.Ingame.IMyEntity.html#VRage_Game_ModAPI_Ingame_IMyEntity_InventoryCount)
+
+[IMyEntity.Closed](VRage.Game.ModAPI.Ingame.IMyEntity.html#VRage_Game_ModAPI_Ingame_IMyEntity_Closed)
+
+[IMyEntity.WorldAABB](VRage.Game.ModAPI.Ingame.IMyEntity.html#VRage_Game_ModAPI_Ingame_IMyEntity_WorldAABB)
+
+[IMyEntity.WorldAABBHr](VRage.Game.ModAPI.Ingame.IMyEntity.html#VRage_Game_ModAPI_Ingame_IMyEntity_WorldAABBHr)
+
+[IMyEntity.WorldVolume](VRage.Game.ModAPI.Ingame.IMyEntity.html#VRage_Game_ModAPI_Ingame_IMyEntity_WorldVolume)
+
+[IMyEntity.WorldVolumeHr](VRage.Game.ModAPI.Ingame.IMyEntity.html#VRage_Game_ModAPI_Ingame_IMyEntity_WorldVolumeHr)
+
+###### **Namespace**: [Sandbox.ModAPI](Sandbox.ModAPI.html)
+
+###### **Assembly**: Sandbox.Common.dll
+
+##### Syntax
+
+```
+public interface IMyVendingMachine : IMyStoreBlock, IMyFunctionalBlock, IMyTerminalBlock, IMyCubeBlock, IMyEntity, IMyStoreBlock, IMyFunctionalBlock, IMyTerminalBlock, IMyCubeBlock, IMyEntity
+```
+
+### Methods
+
+#### Buy()
+
+Sells the item to the person using the machine.
+
+##### Declaration
+
+```
+void Buy()
+```
+
+#### SelectNextItem()
+
+Select next item.
+
+##### Declaration
+
+```
+void SelectNextItem()
+```
+
+#### SelectPreviewsItem()
+
+Select previews item.
+
+##### Declaration
+
+```
+void SelectPreviewsItem()
+```
+
+### Extension Methods
+
+[TerminalBlockExtentions.GetId(IMyTerminalBlock)](Sandbox.ModAPI.Ingame.TerminalBlockExtentions.html#Sandbox_ModAPI_Ingame_TerminalBlockExtentions_GetId_Sandbox_ModAPI_Ingame_IMyTerminalBlock_)
+
+[TerminalBlockExtentions.ApplyAction(IMyTerminalBlock, String)](Sandbox.ModAPI.Ingame.TerminalBlockExtentions.html#Sandbox_ModAPI_Ingame_TerminalBlockExtentions_ApplyAction_Sandbox_ModAPI_Ingame_IMyTerminalBlock_System_String_)
+
+[TerminalBlockExtentions.ApplyAction(IMyTerminalBlock, String, List<TerminalActionParameter>)](Sandbox.ModAPI.Ingame.TerminalBlockExtentions.html#Sandbox_ModAPI_Ingame_TerminalBlockExtentions_ApplyAction_Sandbox_ModAPI_Ingame_IMyTerminalBlock_System_String_System_Collections_Generic_List_Sandbox_ModAPI_Ingame_TerminalActionParameter__)
+
+[TerminalBlockExtentions.HasAction(IMyTerminalBlock, String)](Sandbox.ModAPI.Ingame.TerminalBlockExtentions.html#Sandbox_ModAPI_Ingame_TerminalBlockExtentions_HasAction_Sandbox_ModAPI_Ingame_IMyTerminalBlock_System_String_)
+
+[TerminalBlockExtentions.HasInventory(IMyTerminalBlock)](Sandbox.ModAPI.Ingame.TerminalBlockExtentions.html#Sandbox_ModAPI_Ingame_TerminalBlockExtentions_HasInventory_Sandbox_ModAPI_Ingame_IMyTerminalBlock_)
+
+[TerminalBlockExtentions.GetInventory(IMyTerminalBlock, Int32)](Sandbox.ModAPI.Ingame.TerminalBlockExtentions.html#Sandbox_ModAPI_Ingame_TerminalBlockExtentions_GetInventory_Sandbox_ModAPI_Ingame_IMyTerminalBlock_System_Int32_)
+
+[TerminalBlockExtentions.GetInventoryCount(IMyTerminalBlock)](Sandbox.ModAPI.Ingame.TerminalBlockExtentions.html#Sandbox_ModAPI_Ingame_TerminalBlockExtentions_GetInventoryCount_Sandbox_ModAPI_Ingame_IMyTerminalBlock_)
+
+[TerminalBlockExtentions.GetUseConveyorSystem(IMyTerminalBlock)](Sandbox.ModAPI.Ingame.TerminalBlockExtentions.html#Sandbox_ModAPI_Ingame_TerminalBlockExtentions_GetUseConveyorSystem_Sandbox_ModAPI_Ingame_IMyTerminalBlock_)
+
+[TerminalBlockExtentions.SetUseConveyorSystem(IMyTerminalBlock, Boolean)](Sandbox.ModAPI.Ingame.TerminalBlockExtentions.html#Sandbox_ModAPI_Ingame_TerminalBlockExtentions_SetUseConveyorSystem_Sandbox_ModAPI_Ingame_IMyTerminalBlock_System_Boolean_)
+
+[TerminalPropertyExtensions.GetValueFloat(IMyTerminalBlock, String)](Sandbox.ModAPI.Interfaces.TerminalPropertyExtensions.html#Sandbox_ModAPI_Interfaces_TerminalPropertyExtensions_GetValueFloat_Sandbox_ModAPI_Ingame_IMyTerminalBlock_System_String_)
+
+[TerminalPropertyExtensions.SetValueFloat(IMyTerminalBlock, String, Single)](Sandbox.ModAPI.Interfaces.TerminalPropertyExtensions.html#Sandbox_ModAPI_Interfaces_TerminalPropertyExtensions_SetValueFloat_Sandbox_ModAPI_Ingame_IMyTerminalBlock_System_String_System_Single_)
+
+[TerminalPropertyExtensions.GetValueBool(IMyTerminalBlock, String)](Sandbox.ModAPI.Interfaces.TerminalPropertyExtensions.html#Sandbox_ModAPI_Interfaces_TerminalPropertyExtensions_GetValueBool_Sandbox_ModAPI_Ingame_IMyTerminalBlock_System_String_)
+
+[TerminalPropertyExtensions.SetValueBool(IMyTerminalBlock, String, Boolean)](Sandbox.ModAPI.Interfaces.TerminalPropertyExtensions.html#Sandbox_ModAPI_Interfaces_TerminalPropertyExtensions_SetValueBool_Sandbox_ModAPI_Ingame_IMyTerminalBlock_System_String_System_Boolean_)
+
+[TerminalPropertyExtensions.GetValueColor(IMyTerminalBlock, String)](Sandbox.ModAPI.Interfaces.TerminalPropertyExtensions.html#Sandbox_ModAPI_Interfaces_TerminalPropertyExtensions_GetValueColor_Sandbox_ModAPI_Ingame_IMyTerminalBlock_System_String_)
+
+[TerminalPropertyExtensions.SetValueColor(IMyTerminalBlock, String, Color)](Sandbox.ModAPI.Interfaces.TerminalPropertyExtensions.html#Sandbox_ModAPI_Interfaces_TerminalPropertyExtensions_SetValueColor_Sandbox_ModAPI_Ingame_IMyTerminalBlock_System_String_VRageMath_Color_)
+
+[TerminalPropertyExtensions.GetValue<T>(IMyTerminalBlock, String)](Sandbox.ModAPI.Interfaces.TerminalPropertyExtensions.html#Sandbox_ModAPI_Interfaces_TerminalPropertyExtensions_GetValue__1_Sandbox_ModAPI_Ingame_IMyTerminalBlock_System_String_)
+
+[TerminalPropertyExtensions.GetDefaultValue<T>(IMyTerminalBlock, String)](Sandbox.ModAPI.Interfaces.TerminalPropertyExtensions.html#Sandbox_ModAPI_Interfaces_TerminalPropertyExtensions_GetDefaultValue__1_Sandbox_ModAPI_Ingame_IMyTerminalBlock_System_String_)
+
+[TerminalPropertyExtensions.GetMininum<T>(IMyTerminalBlock, String)](Sandbox.ModAPI.Interfaces.TerminalPropertyExtensions.html#Sandbox_ModAPI_Interfaces_TerminalPropertyExtensions_GetMininum__1_Sandbox_ModAPI_Ingame_IMyTerminalBlock_System_String_)
+
+[TerminalPropertyExtensions.GetMinimum<T>(IMyTerminalBlock, String)](Sandbox.ModAPI.Interfaces.TerminalPropertyExtensions.html#Sandbox_ModAPI_Interfaces_TerminalPropertyExtensions_GetMinimum__1_Sandbox_ModAPI_Ingame_IMyTerminalBlock_System_String_)
+
+[TerminalPropertyExtensions.GetMaximum<T>(IMyTerminalBlock, String)](Sandbox.ModAPI.Interfaces.TerminalPropertyExtensions.html#Sandbox_ModAPI_Interfaces_TerminalPropertyExtensions_GetMaximum__1_Sandbox_ModAPI_Ingame_IMyTerminalBlock_System_String_)
+
+[TerminalPropertyExtensions.SetValue<T>(IMyTerminalBlock, String, T)](Sandbox.ModAPI.Interfaces.TerminalPropertyExtensions.html#Sandbox_ModAPI_Interfaces_TerminalPropertyExtensions_SetValue__1_Sandbox_ModAPI_Ingame_IMyTerminalBlock_System_String___0_)
+
+_☀_
+
+_☾_

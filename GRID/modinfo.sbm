@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SteamPublishedFileId>2896187154</SteamPublishedFileId>
+  <Name>GRID - Intelligent Space Engineers AI Companion</Name>
+  <Description>Advanced AI companion system for Space Engineers providing natural language ship control, autonomous operations, and comprehensive automation through intelligent spatial awareness and safety validation.</Description>
+  <GameVersion>01206000</GameVersion>
+</ModInfo>

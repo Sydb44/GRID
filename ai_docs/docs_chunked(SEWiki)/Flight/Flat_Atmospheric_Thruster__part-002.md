@@ -1,0 +1,30 @@
+
+The Flatmo has less than half the component cost and uses less power, but is also less robust and has only 1/3 of the lift of a full Atmo Thruster.
+
+Just as with all other thrusters, there are four blocks: A large Flat Thruster versus regular sized Flat Thrusters, and both exist for small grid and for large grid.
+
+*   Large-grid  [![Icon Block Flat Atmospheric Thruster.png](https://spaceengineers.wiki.gg/images/thumb/6/69/Icon_Block_Flat_Atmospheric_Thruster.png/21px-Icon_Block_Flat_Atmospheric_Thruster.png?30e669)](https://spaceengineers.wiki.gg/wiki/Flat_Atmospheric_Thruster "Flat Atmospheric Thruster") Flat Atmospheric Thruster
+*   Large-grid  [![Icon Block Large Flat Atmospheric Thruster.png](https://spaceengineers.wiki.gg/images/thumb/e/e2/Icon_Block_Large_Flat_Atmospheric_Thruster.png/21px-Icon_Block_Large_Flat_Atmospheric_Thruster.png?30e669)](https://spaceengineers.wiki.gg/wiki/Large_Flat_Atmospheric_Thruster "Large Flat Atmospheric Thruster") [Large Flat Atmospheric Thruster](https://spaceengineers.wiki.gg/wiki/Large_Flat_Atmospheric_Thruster "Large Flat Atmospheric Thruster")
+*   Large-grid  [![Icon Block Large Flat Atmospheric Thruster D Shape.png](https://spaceengineers.wiki.gg/images/thumb/b/b1/Icon_Block_Large_Flat_Atmospheric_Thruster_D_Shape.png/21px-Icon_Block_Large_Flat_Atmospheric_Thruster_D_Shape.png?8c7840)](https://spaceengineers.wiki.gg/wiki/Large_Flat_Atmospheric_Thruster_D_Shape "Large Flat Atmospheric Thruster D Shape") [Large Flat Atmospheric Thruster D Shape](https://spaceengineers.wiki.gg/wiki/Large_Flat_Atmospheric_Thruster_D_Shape "Large Flat Atmospheric Thruster D Shape")
+*   Small-grid  [![Icon Block Flat Atmospheric Thruster.png](https://spaceengineers.wiki.gg/images/thumb/6/69/Icon_Block_Flat_Atmospheric_Thruster.png/21px-Icon_Block_Flat_Atmospheric_Thruster.png?30e669)](https://spaceengineers.wiki.gg/wiki/Flat_Atmospheric_Thruster "Flat Atmospheric Thruster") Flat Atmospheric Thruster
+*   Small-grid  [![Icon Block Large Flat Atmospheric Thruster.png](https://spaceengineers.wiki.gg/images/thumb/e/e2/Icon_Block_Large_Flat_Atmospheric_Thruster.png/21px-Icon_Block_Large_Flat_Atmospheric_Thruster.png?30e669)](https://spaceengineers.wiki.gg/wiki/Large_Flat_Atmospheric_Thruster "Large Flat Atmospheric Thruster") [Large Flat Atmospheric Thruster](https://spaceengineers.wiki.gg/wiki/Large_Flat_Atmospheric_Thruster "Large Flat Atmospheric Thruster")
+*   Small-grid  [![Icon Block Large Flat Atmospheric Thruster D Shape.png](https://spaceengineers.wiki.gg/images/thumb/b/b1/Icon_Block_Large_Flat_Atmospheric_Thruster_D_Shape.png/21px-Icon_Block_Large_Flat_Atmospheric_Thruster_D_Shape.png?8c7840)](https://spaceengineers.wiki.gg/wiki/Large_Flat_Atmospheric_Thruster_D_Shape "Large Flat Atmospheric Thruster D Shape") [Large Flat Atmospheric Thruster D Shape](https://spaceengineers.wiki.gg/wiki/Large_Flat_Atmospheric_Thruster_D_Shape "Large Flat Atmospheric Thruster D Shape")
+
+**Flat Atmospheric Thruster D Shape** is a shape variant of the Flat Atmospheric Thruster. Flat Atmospheric Thrusters are circular encased in a square hull, whereas the D shape variant is circular with only one straight side. The circular one has mount points all around the square frame, while the D Shape has mount points only on the straight side.
+
+## Recipe
+
+The recipe is for the regular size Flat Atmospheric Thruster (Square or D Shape) for large grids and small grid vehicles.
+
+| [![Icon Block Flat Atmospheric Thruster.png](https://spaceengineers.wiki.gg/images/thumb/6/69/Icon_Block_Flat_Atmospheric_Thruster.png/21px-Icon_Block_Flat_Atmospheric_Thruster.png?30e669)](https://spaceengineers.wiki.gg/wiki/Flat_Atmospheric_Thruster "Flat Atmospheric Thruster") Flat Atmospheric Thruster |     |     |     |     |
+| --- | --- | --- | --- | --- |
+| Component | Large Ship/Station  <br>Required | Large Ship/Station  <br>Optional | Small Ship  <br>Required | Small Ship  <br>Optional |
+| [![Icon Item Steel Plate.png](https://spaceengineers.wiki.gg/images/thumb/4/4c/Icon_Item_Steel_Plate.png/21px-Icon_Item_Steel_Plate.png?437e3a)](https://spaceengineers.wiki.gg/wiki/Steel_Plate "Steel Plate") [Steel Plate](https://spaceengineers.wiki.gg/wiki/Steel_Plate "Steel Plate") | 5   | 10  | 1   | 1   |
+| [![Icon Item Motor.png](https://spaceengineers.wiki.gg/images/thumb/2/2c/Icon_Item_Motor.png/21px-Icon_Item_Motor.png?4a2f3f)](https://spaceengineers.wiki.gg/wiki/Motor "Motor") [Motor](https://spaceengineers.wiki.gg/wiki/Motor "Motor") | 30  | —   | 6   | —   |
+| [![Icon Item Metal Grid.png](https://spaceengineers.wiki.gg/images/thumb/1/16/Icon_Item_Metal_Grid.png/21px-Icon_Item_Metal_Grid.png?c674cf)](https://spaceengineers.wiki.gg/wiki/Metal_Grid "Metal Grid") [Metal Grid](https://spaceengineers.wiki.gg/wiki/Metal_Grid "Metal Grid") | 3   | —   | 1   | —   |
+| [![Icon Item Large Steel Tube.png](https://spaceengineers.wiki.gg/images/thumb/f/fe/Icon_Item_Large_Steel_Tube.png/21px-Icon_Item_Large_Steel_Tube.png?31c1e4)](https://spaceengineers.wiki.gg/wiki/Large_Steel_Tube "Large Steel Tube") [Large Steel Tube](https://spaceengineers.wiki.gg/wiki/Large_Steel_Tube "Large Steel Tube") | 3   | —   | 1   | —   |
+| [![Icon Item Construction Comp..png](https://spaceengineers.wiki.gg/images/thumb/4/45/Icon_Item_Construction_Comp..png/21px-Icon_Item_Construction_Comp..png?cdc26f)](https://spaceengineers.wiki.gg/wiki/Construction_Comp. "Construction Comp.") [Construction Comp.](https://spaceengineers.wiki.gg/wiki/Construction_Comp. "Construction Comp.") | 10  | 10  | 10  | 1   |
+
+## References
+
+1.  [↑](#cite_ref-1 "Jump up") [https://www.reddit.com/r/spaceengineers/comments/1678cfi/do\_the\_new\_flat\_atmo\_thrusters\_have\_the\_same/](https://www.reddit.com/r/spaceengineers/comments/1678cfi/do_the_new_flat_atmo_thrusters_have_the_same/)

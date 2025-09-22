@@ -1,0 +1,72 @@
+{"id": "normalize.turn_on.v1", "canonical": "turn_on", "synonyms": ["turn on", "switch on", "power on", "enable", "activate", "start", "boot up", "fire up", "bring online"], "confidence": [1.0, 1.0, 1.0, 0.9, 0.9, 0.8, 0.7, 0.7, 0.8]}
+{"id": "normalize.turn_off.v1", "canonical": "turn_off", "synonyms": ["turn off", "switch off", "power off", "disable", "deactivate", "stop", "shut down", "power down", "bring offline"], "confidence": [1.0, 1.0, 1.0, 0.9, 0.9, 0.8, 0.7, 0.7, 0.8]}
+{"id": "normalize.open.v1", "canonical": "open", "synonyms": ["open", "unlock", "unseal", "raise", "lift", "expand", "extend"], "confidence": [1.0, 0.9, 0.8, 0.6, 0.6, 0.5, 0.7]}
+{"id": "normalize.close.v1", "canonical": "close", "synonyms": ["close", "shut", "lock", "seal", "lower", "collapse", "retract"], "confidence": [1.0, 0.9, 0.8, 0.8, 0.6, 0.5, 0.7]}
+{"id": "normalize.pressurize.v1", "canonical": "pressurize", "synonyms": ["pressurize", "fill", "inflate", "pump up", "add air", "oxygenate"], "confidence": [1.0, 0.8, 0.7, 0.6, 0.8, 0.7]}
+{"id": "normalize.depressurize.v1", "canonical": "depressurize", "synonyms": ["depressurize", "evacuate", "vent", "empty", "vacuum", "suck out", "decompress"], "confidence": [1.0, 0.9, 0.9, 0.7, 0.8, 0.6, 0.8]}
+{"id": "normalize.charge.v1", "canonical": "charge", "synonyms": ["charge", "recharge", "power up", "fill battery", "energize"], "confidence": [1.0, 0.9, 0.7, 0.8, 0.6]}
+{"id": "normalize.discharge.v1", "canonical": "discharge", "synonyms": ["discharge", "drain", "empty battery", "power down", "deplete"], "confidence": [1.0, 0.8, 0.7, 0.6, 0.7]}
+{"id": "normalize.auto.v1", "canonical": "auto", "synonyms": ["auto", "automatic", "smart mode", "intelligent", "adaptive"], "confidence": [1.0, 0.9, 0.7, 0.6, 0.6]}
+{"id": "normalize.increase.v1", "canonical": "increase", "synonyms": ["increase", "raise", "boost", "up", "higher", "more", "amplify", "enhance"], "confidence": [1.0, 0.9, 0.8, 0.8, 0.7, 0.7, 0.6, 0.6]}
+{"id": "normalize.decrease.v1", "canonical": "decrease", "synonyms": ["decrease", "lower", "reduce", "down", "less", "diminish", "minimize"], "confidence": [1.0, 0.9, 0.8, 0.8, 0.7, 0.6, 0.6]}
+{"id": "normalize.set.v1", "canonical": "set", "synonyms": ["set", "adjust", "configure", "change", "modify", "tune", "calibrate"], "confidence": [1.0, 0.9, 0.8, 0.8, 0.7, 0.6, 0.7]}
+{"id": "normalize.toggle.v1", "canonical": "toggle", "synonyms": ["toggle", "flip", "switch", "alternate", "change state"], "confidence": [1.0, 0.8, 0.9, 0.6, 0.7]}
+{"id": "normalize.reset.v1", "canonical": "reset", "synonyms": ["reset", "clear", "default", "restore", "initialize", "zero"], "confidence": [1.0, 0.8, 0.7, 0.7, 0.6, 0.6]}
+{"id": "normalize.extend.v1", "canonical": "extend", "synonyms": ["extend", "push", "advance", "stretch", "elongate", "project"], "confidence": [1.0, 0.8, 0.7, 0.6, 0.6, 0.7]}
+{"id": "normalize.retract.v1", "canonical": "retract", "synonyms": ["retract", "pull", "withdraw", "contract", "shrink", "collapse"], "confidence": [1.0, 0.8, 0.8, 0.7, 0.6, 0.6]}
+{"id": "normalize.rotate.v1", "canonical": "rotate", "synonyms": ["rotate", "spin", "turn", "revolve", "twist", "pivot"], "confidence": [1.0, 0.9, 0.8, 0.7, 0.6, 0.7]}
+{"id": "normalize.move.v1", "canonical": "move", "synonyms": ["move", "position", "goto", "travel to", "navigate to", "relocate"], "confidence": [1.0, 0.8, 0.8, 0.7, 0.7, 0.6]}
+{"id": "normalize.lock.v1", "canonical": "lock", "synonyms": ["lock", "secure", "engage", "fasten", "attach", "connect"], "confidence": [1.0, 0.8, 0.8, 0.6, 0.7, 0.7]}
+{"id": "normalize.unlock.v1", "canonical": "unlock", "synonyms": ["unlock", "release", "disengage", "unfasten", "detach", "disconnect"], "confidence": [1.0, 0.9, 0.8, 0.6, 0.7, 0.7]}
+{"id": "normalize.fire.v1", "canonical": "fire", "synonyms": ["fire", "shoot", "attack", "engage", "blast", "launch"], "confidence": [1.0, 0.9, 0.8, 0.7, 0.6, 0.7]}
+{"id": "normalize.target.v1", "canonical": "target", "synonyms": ["target", "aim at", "focus on", "lock onto", "designate", "mark"], "confidence": [1.0, 0.9, 0.7, 0.8, 0.6, 0.6]}
+{"id": "normalize.scan.v1", "canonical": "scan", "synonyms": ["scan", "detect", "search", "survey", "examine", "probe"], "confidence": [1.0, 0.8, 0.8, 0.7, 0.6, 0.6]}
+{"id": "normalize.dock.v1", "canonical": "dock", "synonyms": ["dock", "connect", "attach", "link up", "couple", "berth"], "confidence": [1.0, 0.8, 0.8, 0.7, 0.6, 0.7]}
+{"id": "normalize.undock.v1", "canonical": "undock", "synonyms": ["undock", "disconnect", "detach", "unlink", "decouple", "cast off"], "confidence": [1.0, 0.9, 0.9, 0.7, 0.6, 0.6]}
+{"id": "normalize.jump.v1", "canonical": "jump", "synonyms": ["jump", "warp", "teleport", "transport", "leap"], "confidence": [1.0, 0.8, 0.7, 0.6, 0.5]}
+{"id": "normalize.align.v1", "canonical": "align", "synonyms": ["align", "orient", "face", "point toward", "direct", "angle"], "confidence": [1.0, 0.9, 0.8, 0.7, 0.6, 0.6]}
+{"id": "normalize.produce.v1", "canonical": "produce", "synonyms": ["produce", "manufacture", "craft", "make", "build", "fabricate"], "confidence": [1.0, 0.9, 0.8, 0.8, 0.8, 0.7]}
+{"id": "normalize.assemble.v1", "canonical": "assemble", "synonyms": ["assemble", "build", "construct", "create", "manufacture"], "confidence": [1.0, 0.9, 0.8, 0.7, 0.8]}
+{"id": "normalize.refine.v1", "canonical": "refine", "synonyms": ["refine", "process", "smelt", "purify", "convert"], "confidence": [1.0, 0.9, 0.8, 0.6, 0.7]}
+{"id": "normalize.weld.v1", "canonical": "weld", "synonyms": ["weld", "build", "construct", "repair", "fix"], "confidence": [1.0, 0.8, 0.8, 0.7, 0.6]}
+{"id": "normalize.grind.v1", "canonical": "grind", "synonyms": ["grind", "demolish", "deconstruct", "destroy", "dismantle"], "confidence": [1.0, 0.8, 0.9, 0.6, 0.8]}
+{"id": "normalize.collect.v1", "canonical": "collect", "synonyms": ["collect", "gather", "mine", "harvest", "extract"], "confidence": [1.0, 0.8, 0.9, 0.6, 0.7]}
+{"id": "normalize.sort.v1", "canonical": "sort", "synonyms": ["sort", "filter", "organize", "separate", "categorize"], "confidence": [1.0, 0.8, 0.7, 0.7, 0.6]}
+{"id": "normalize.transfer.v1", "canonical": "transfer", "synonyms": ["transfer", "move", "transport", "convey", "send"], "confidence": [1.0, 0.8, 0.8, 0.7, 0.7]}
+{"id": "normalize.broadcast.v1", "canonical": "broadcast", "synonyms": ["broadcast", "transmit", "send", "announce", "communicate"], "confidence": [1.0, 0.8, 0.8, 0.6, 0.7]}
+{"id": "normalize.stockpile.v1", "canonical": "stockpile", "synonyms": ["stockpile", "hoard", "collect", "accumulate", "store"], "confidence": [1.0, 0.7, 0.6, 0.7, 0.8]}
+{"id": "normalize.lights.v1", "canonical": "lights", "synonyms": ["lights", "lighting", "illumination", "lamps"], "confidence": [1.0, 0.9, 0.7, 0.6]}
+{"id": "normalize.doors.v1", "canonical": "doors", "synonyms": ["doors", "doorway", "entrance", "exit", "portal"], "confidence": [1.0, 0.8, 0.7, 0.7, 0.6]}
+{"id": "normalize.hangar_doors.v1", "canonical": "hangar_doors", "synonyms": ["hangar doors", "hangar", "large doors", "bay doors"], "confidence": [1.0, 0.8, 0.8, 0.9]}
+{"id": "normalize.batteries.v1", "canonical": "batteries", "synonyms": ["batteries", "battery", "power storage", "energy storage"], "confidence": [1.0, 0.9, 0.8, 0.8]}
+{"id": "normalize.reactors.v1", "canonical": "reactors", "synonyms": ["reactors", "reactor", "power plant", "generator"], "confidence": [1.0, 0.9, 0.7, 0.8]}
+{"id": "normalize.thrusters.v1", "canonical": "thrusters", "synonyms": ["thrusters", "thruster", "engines", "propulsion"], "confidence": [1.0, 0.9, 0.8, 0.8]}
+{"id": "normalize.gyroscopes.v1", "canonical": "gyroscopes", "synonyms": ["gyroscopes", "gyros", "gyro", "stabilizers"], "confidence": [1.0, 0.9, 0.8, 0.7]}
+{"id": "normalize.sensors.v1", "canonical": "sensors", "synonyms": ["sensors", "sensor", "detectors", "proximity sensors"], "confidence": [1.0, 0.9, 0.8, 0.8]}
+{"id": "normalize.turrets.v1", "canonical": "turrets", "synonyms": ["turrets", "turret", "weapons", "guns", "defense"], "confidence": [1.0, 0.9, 0.8, 0.7, 0.7]}
+{"id": "normalize.pistons.v1", "canonical": "pistons", "synonyms": ["pistons", "piston", "hydraulics", "actuators"], "confidence": [1.0, 0.9, 0.6, 0.7]}
+{"id": "normalize.rotors.v1", "canonical": "rotors", "synonyms": ["rotors", "rotor", "motors", "rotating parts"], "confidence": [1.0, 0.9, 0.6, 0.7]}
+{"id": "normalize.landing_gear.v1", "canonical": "landing_gear", "synonyms": ["landing gear", "legs", "feet", "supports"], "confidence": [1.0, 0.8, 0.7, 0.6]}
+{"id": "normalize.connectors.v1", "canonical": "connectors", "synonyms": ["connectors", "connector", "docking ports", "coupling"], "confidence": [1.0, 0.9, 0.8, 0.6]}
+{"id": "normalize.air_vents.v1", "canonical": "air_vents", "synonyms": ["air vents", "vents", "life support", "oxygen system"], "confidence": [1.0, 0.9, 0.7, 0.8]}
+{"id": "normalize.cameras.v1", "canonical": "cameras", "synonyms": ["cameras", "camera", "viewers", "monitors"], "confidence": [1.0, 0.9, 0.7, 0.7]}
+{"id": "normalize.antennas.v1", "canonical": "antennas", "synonyms": ["antennas", "antenna", "radio", "communication"], "confidence": [1.0, 0.9, 0.7, 0.8]}
+{"id": "normalize.beacons.v1", "canonical": "beacons", "synonyms": ["beacons", "beacon", "markers", "transponders"], "confidence": [1.0, 0.9, 0.7, 0.6]}
+{"id": "normalize.containers.v1", "canonical": "containers", "synonyms": ["containers", "container", "cargo", "storage", "boxes"], "confidence": [1.0, 0.9, 0.8, 0.8, 0.6]}
+{"id": "normalize.conveyors.v1", "canonical": "conveyors", "synonyms": ["conveyors", "conveyor", "tubes", "pipes", "transport"], "confidence": [1.0, 0.9, 0.7, 0.6, 0.7]}
+{"id": "normalize.assemblers.v1", "canonical": "assemblers", "synonyms": ["assemblers", "assembler", "fabricators", "manufacturing"], "confidence": [1.0, 0.9, 0.7, 0.8]}
+{"id": "normalize.refineries.v1", "canonical": "refineries", "synonyms": ["refineries", "refinery", "smelters", "processors"], "confidence": [1.0, 0.9, 0.7, 0.8]}
+{"id": "normalize.drills.v1", "canonical": "drills", "synonyms": ["drills", "drill", "miners", "excavators"], "confidence": [1.0, 0.9, 0.7, 0.6]}
+{"id": "normalize.welders.v1", "canonical": "welders", "synonyms": ["welders", "welder", "builders", "construction"], "confidence": [1.0, 0.9, 0.7, 0.7]}
+{"id": "normalize.grinders.v1", "canonical": "grinders", "synonyms": ["grinders", "grinder", "demolishers", "salvage"], "confidence": [1.0, 0.9, 0.6, 0.7]}
+{"id": "normalize.projectors.v1", "canonical": "projectors", "synonyms": ["projectors", "projector", "blueprints", "holograms"], "confidence": [1.0, 0.9, 0.7, 0.8]}
+{"id": "normalize.timers.v1", "canonical": "timers", "synonyms": ["timers", "timer", "automation", "schedulers"], "confidence": [1.0, 0.9, 0.7, 0.6]}
+{"id": "normalize.programmable_blocks.v1", "canonical": "programmable_blocks", "synonyms": ["programmable blocks", "programmable", "computers", "scripts"], "confidence": [1.0, 0.8, 0.7, 0.8]}
+{"id": "normalize.remote_controls.v1", "canonical": "remote_controls", "synonyms": ["remote controls", "remote", "autopilot", "ai pilot"], "confidence": [1.0, 0.8, 0.8, 0.7]}
+{"id": "normalize.cockpits.v1", "canonical": "cockpits", "synonyms": ["cockpits", "cockpit", "pilot seats", "control seats"], "confidence": [1.0, 0.9, 0.8, 0.8]}
+{"id": "normalize.medical_rooms.v1", "canonical": "medical_rooms", "synonyms": ["medical rooms", "medical", "medbay", "health stations"], "confidence": [1.0, 0.8, 0.7, 0.7]}
+{"id": "normalize.cryo_chambers.v1", "canonical": "cryo_chambers", "synonyms": ["cryo chambers", "cryo", "stasis pods", "sleep pods"], "confidence": [1.0, 0.8, 0.6, 0.6]}
+{"id": "normalize.solar_panels.v1", "canonical": "solar_panels", "synonyms": ["solar panels", "solar", "photovoltaics", "pv panels"], "confidence": [1.0, 0.9, 0.6, 0.6]}
+{"id": "normalize.wind_turbines.v1", "canonical": "wind_turbines", "synonyms": ["wind turbines", "windmills", "wind generators"], "confidence": [1.0, 0.7, 0.8]}
+{"id": "normalize.jump_drives.v1", "canonical": "jump_drives", "synonyms": ["jump drives", "jump drive", "warp drives", "ftl drives"], "confidence": [1.0, 0.9, 0.7, 0.6]}
+{"id": "normalize.gravity_generators.v1", "canonical": "gravity_generators", "synonyms": ["gravity generators", "gravity", "grav gens", "artificial gravity"], "confidence": [1.0, 0.8, 0.7, 0.8]}
