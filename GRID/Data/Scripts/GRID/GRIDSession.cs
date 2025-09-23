@@ -73,6 +73,12 @@ namespace GRID
                 // Initialize safe testing framework (simplified for Step 4)
                 MinimalTest_Safe.Initialize();
                 
+                // Initialize Step 8 safety validation tests
+                Step8ValidationTests.Initialize();
+                
+                // Initialize Step 9 core system controller tests
+                Step9ValidationTests.Initialize();
+                
                 // Initialize spatial intelligence system (Step 5)
                 _spatialCoordinator = BasicSpatialCoordinator.Instance;
                 _spatialCoordinator.Initialize();
@@ -301,6 +307,12 @@ namespace GRID
                 
                 // Step 7 Test: Demonstrate real block control via Universal Controller
                 TestUniversalControllerExecution();
+                
+                // Step 8 Test: Validate safety system - CRITICAL for safe AI operation
+                TestStep8SafetyValidation();
+                
+                // Step 9 Test: Validate core system controllers - Power, Life Support, Automation
+                // DISABLED: TestStep9CoreControllers(); // These automated tests interfere with user commands
                 
                 // Future steps will add:
                 // - Command processing
@@ -958,6 +970,169 @@ namespace GRID
             catch (Exception ex)
             {
                 ErrorHandler.ReportError("GRIDSession", "Universal controller status report failed", ex, ErrorHandler.ErrorSeverity.Low);
+            }
+        }
+        
+        #endregion
+        
+        #region Step 8 - Safety Validation Testing
+        
+        // Step 8 test tracking
+        private bool _step8SafetyTestExecuted = false;
+        
+        /// <summary>
+        /// Test Step 8 Safety Validation System - CRITICAL REQUIREMENTS
+        /// Validates: "turn off all life support" is BLOCKED, "turn on lights" is ALLOWED
+        /// </summary>
+        private void TestStep8SafetyValidation()
+        {
+            // Execute safety validation test after 80 seconds (4800 ticks)  
+            if (!_step8SafetyTestExecuted && _ticksSinceStart >= 4800)
+            {
+                using (PerformanceMonitor.TrackComponent("Step8SafetyDemo"))
+                {
+                    ExecuteStep8SafetyTest();
+                    _step8SafetyTestExecuted = true;
+                }
+            }
+        }
+        
+        /// <summary>
+        /// Execute Step 8 Safety Validation Test (Critical Requirements)
+        /// </summary>
+        private void ExecuteStep8SafetyTest()
+        {
+            try
+            {
+                MyLog.Default.WriteLine("GRID Step8SafetyDemo: === EXECUTING STEP 8 SAFETY VALIDATION TESTS ===");
+                MyLog.Default.WriteLine("GRID Step8SafetyDemo: Testing AI_BUILD_STEPS.md requirements:");
+                MyLog.Default.WriteLine("GRID Step8SafetyDemo: 1. 'turn off all life support' is BLOCKED");
+                MyLog.Default.WriteLine("GRID Step8SafetyDemo: 2. 'turn on lights' is ALLOWED");
+                
+                // Run all Step 8 safety validation tests
+                bool allTestsPassed = Step8ValidationTests.RunAllSafetyTests();
+                
+                if (allTestsPassed)
+                {
+                    MyLog.Default.WriteLine("GRID Step8SafetyDemo: 🎉 STEP 8 REQUIREMENT VALIDATION SUCCESS");
+                    MyLog.Default.WriteLine("GRID Step8SafetyDemo: ✅ All safety protections working correctly");
+                    MyLog.Default.WriteLine("GRID Step8SafetyDemo: ✅ Life support systems protected");
+                    MyLog.Default.WriteLine("GRID Step8SafetyDemo: ✅ Lighting systems accessible");
+                    MyLog.Default.WriteLine("GRID Step8SafetyDemo: ✅ Safety toggle functionality confirmed");
+                    MyLog.Default.WriteLine("GRID Step8SafetyDemo: ✅ Emergency override functionality confirmed");
+                    MyLog.Default.WriteLine("GRID Step8SafetyDemo: === READY FOR STEP 9 IMPLEMENTATION ===");
+                }
+                else
+                {
+                    MyLog.Default.WriteLine("GRID Step8SafetyDemo: ⚠️ STEP 8 REQUIREMENT VALIDATION FAILED");
+                    MyLog.Default.WriteLine("GRID Step8SafetyDemo: ❌ Safety system not working correctly");
+                    MyLog.Default.WriteLine("GRID Step8SafetyDemo: === STEP 8 NEEDS DEBUGGING ===");
+                }
+                
+                // Display test summary and safety status
+                var summary = Step8ValidationTests.GetTestSummary();
+                var safetyStatus = CommandExecutionEngine.GetSafetyStatus();
+                
+                MyLog.Default.WriteLine($"GRID Step8SafetyDemo: Test Summary: {summary}");
+                MyLog.Default.WriteLine($"GRID Step8SafetyDemo: Safety Status: {safetyStatus}");
+                
+                // Demonstrate toggle capability for testing
+                MyLog.Default.WriteLine("GRID Step8SafetyDemo: Demonstrating safety toggle for testing...");
+                CommandExecutionEngine.SetSafetyEnabled(false);
+                MyLog.Default.WriteLine("GRID Step8SafetyDemo: Safety disabled - dangerous commands now allowed");
+                
+                CommandExecutionEngine.SetSafetyEnabled(true);
+                MyLog.Default.WriteLine("GRID Step8SafetyDemo: Safety re-enabled - protection restored");
+                
+                MyLog.Default.WriteLine("GRID Step8SafetyDemo: === STEP 8 SAFETY VALIDATION COMPLETE ===");
+            }
+            catch (Exception ex)
+            {
+                ErrorHandler.ReportError("GRIDSession", "Step 8 safety validation test failed", ex, ErrorHandler.ErrorSeverity.High);
+                MyLog.Default.WriteLine("GRID Step8SafetyDemo: ❌ STEP 8 TEST EXECUTION FAILED - See error logs");
+            }
+        }
+        
+        #endregion
+        
+        #region Step 9 - Core System Controllers Testing
+        
+        // Step 9 test tracking
+        private bool _step9ControllerTestExecuted = false;
+        
+        /// <summary>
+        /// Test Step 9 Core System Controllers - CRITICAL REQUIREMENTS
+        /// Validates: "Battery charge/discharge modes work", "Oxygen management works"
+        /// </summary>
+        private void TestStep9CoreControllers()
+        {
+            // Execute core controller test after 90 seconds (5400 ticks)  
+            if (!_step9ControllerTestExecuted && _ticksSinceStart >= 5400)
+            {
+                using (PerformanceMonitor.TrackComponent("Step9CoreControllersDemo"))
+                {
+                    ExecuteStep9ControllerTest();
+                    _step9ControllerTestExecuted = true;
+                }
+            }
+        }
+        
+        /// <summary>
+        /// Execute Step 9 Core Controller Test (Critical Requirements)
+        /// </summary>
+        private void ExecuteStep9ControllerTest()
+        {
+            try
+            {
+                MyLog.Default.WriteLine("GRID Step9CoreControllersDemo: === EXECUTING STEP 9 CORE CONTROLLER TESTS ===");
+                MyLog.Default.WriteLine("GRID Step9CoreControllersDemo: Testing AI_BUILD_STEPS.md requirements:");
+                MyLog.Default.WriteLine("GRID Step9CoreControllersDemo: 1. Battery charge/discharge modes work");
+                MyLog.Default.WriteLine("GRID Step9CoreControllersDemo: 2. Oxygen management works");
+                
+                // Run all Step 9 core controller validation tests
+                bool allTestsPassed = Step9ValidationTests.RunAllStep9Tests();
+                
+                if (allTestsPassed)
+                {
+                    MyLog.Default.WriteLine("GRID Step9CoreControllersDemo: 🎉 STEP 9 REQUIREMENT VALIDATION SUCCESS");
+                    MyLog.Default.WriteLine("GRID Step9CoreControllersDemo: ✅ All core system controllers working correctly");
+                    MyLog.Default.WriteLine("GRID Step9CoreControllersDemo: ✅ Power management controller operational");
+                    MyLog.Default.WriteLine("GRID Step9CoreControllersDemo: ✅ Life support controller operational");
+                    MyLog.Default.WriteLine("GRID Step9CoreControllersDemo: ✅ Automation controller operational");
+                    MyLog.Default.WriteLine("GRID Step9CoreControllersDemo: ✅ Safety integration confirmed for all controllers");
+                    MyLog.Default.WriteLine("GRID Step9CoreControllersDemo: ✅ Performance compliance confirmed");
+                    MyLog.Default.WriteLine("GRID Step9CoreControllersDemo: === READY FOR STEP 10 IMPLEMENTATION ===");
+                }
+                else
+                {
+                    MyLog.Default.WriteLine("GRID Step9CoreControllersDemo: ⚠️ STEP 9 REQUIREMENT VALIDATION FAILED");
+                    MyLog.Default.WriteLine("GRID Step9CoreControllersDemo: ❌ Some core system controllers not working correctly");
+                    MyLog.Default.WriteLine("GRID Step9CoreControllersDemo: === STEP 9 NEEDS DEBUGGING ===");
+                }
+                
+                // Display test summary and controller status
+                var summary = Step9ValidationTests.GetTestSummary();
+                var executionStatus = CommandExecutionEngine.GetExecutionEngineStatus();
+                var safetyStatus = CommandExecutionEngine.GetSafetyStatus();
+                
+                MyLog.Default.WriteLine($"GRID Step9CoreControllersDemo: Test Summary: {summary}");
+                MyLog.Default.WriteLine($"GRID Step9CoreControllersDemo: Execution Engine: {executionStatus}");
+                MyLog.Default.WriteLine($"GRID Step9CoreControllersDemo: Safety Status: {safetyStatus}");
+                
+                // Test individual controller capabilities
+                MyLog.Default.WriteLine("GRID Step9CoreControllersDemo: Testing individual controller capabilities...");
+                bool powerControllerPass = Step9ValidationTests.TestPowerManagementController();
+                bool lifeSupportControllerPass = Step9ValidationTests.TestLifeSupportController();
+                
+                MyLog.Default.WriteLine($"GRID Step9CoreControllersDemo: Power Management Controller: {(powerControllerPass ? "PASS" : "FAIL")}");
+                MyLog.Default.WriteLine($"GRID Step9CoreControllersDemo: Life Support Controller: {(lifeSupportControllerPass ? "PASS" : "FAIL")}");
+                
+                MyLog.Default.WriteLine("GRID Step9CoreControllersDemo: === STEP 9 CORE CONTROLLER VALIDATION COMPLETE ===");
+            }
+            catch (Exception ex)
+            {
+                ErrorHandler.ReportError("GRIDSession", "Step 9 core controller validation test failed", ex, ErrorHandler.ErrorSeverity.High);
+                MyLog.Default.WriteLine("GRID Step9CoreControllersDemo: ❌ STEP 9 TEST EXECUTION FAILED - See error logs");
             }
         }
         

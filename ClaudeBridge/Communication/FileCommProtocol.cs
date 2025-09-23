@@ -218,8 +218,8 @@ namespace ClaudeBridge.Communication
                 {
                     RequestId = requestId,
                     Success = false,
-                    Message = "Timeout waiting for SE mod response",
-                    ErrorDetails = $"No response received within {RESPONSE_TIMEOUT_MS}ms"
+                    Message = "SE mod not responding - Please start Space Engineers and load your ship save with the GRID mod enabled",
+                    ErrorDetails = $"No response received within {RESPONSE_TIMEOUT_MS}ms. Check that Space Engineers is running and the GRID mod is loaded."
                 };
             }
             catch (Exception ex)

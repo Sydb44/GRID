@@ -18,11 +18,13 @@ namespace ClaudeBridge.API
         #region Constants and Configuration
         
         private const string CLAUDE_API_BASE_URL = "https://api.anthropic.com";
-        private const string CLAUDE_MODEL = "claude-3-5-sonnet-20241022";
-        private const int REQUEST_TIMEOUT_MS = 30000;
-        private const int MAX_RETRIES = 3;
-        private const int MAX_CONCURRENT_REQUESTS = 5;
-        private const int RATE_LIMIT_DELAY_MS = 1000;
+        private const string CLAUDE_MODEL = "claude-3-haiku-20240307";  // PERFORMANCE: Faster, cheaper model
+        private const int REQUEST_TIMEOUT_MS = 10000;   // PERFORMANCE: Reduced from 30s to 10s
+        private const int MAX_RETRIES = 1;               // PERFORMANCE: Reduced retries to fail fast
+        private const int MAX_CONCURRENT_REQUESTS = 1;  // Reduced to prevent overload
+        private const int RATE_LIMIT_DELAY_MS = 1000;   // PERFORMANCE: Reduced from 3s to 1s
+        private const int OVERLOAD_BACKOFF_MS = 5000;   // PERFORMANCE: Reduced from 10s to 5s
+        private const int CIRCUIT_BREAKER_THRESHOLD = 3; // Open circuit after 3 consecutive 529s
         
         // Step 28 requirement: <800ms response time target
         private const int RESPONSE_TIME_TARGET_MS = 800;
@@ -71,6 +73,12 @@ namespace ClaudeBridge.API
         private double _averageResponseTime = 0;
         private bool _isDisposed = false;
         
+        // Circuit breaker and overload protection
+        private int _consecutive529Errors = 0;
+        private DateTime _lastOverloadTime = DateTime.MinValue;
+        private bool _circuitBreakerOpen = false;
+        private DateTime _circuitBreakerOpenTime = DateTime.MinValue;
+        
         #endregion
         
         #region Initialization
@@ -117,6 +125,39 @@ namespace ClaudeBridge.API
                     Success = false,
                     ErrorMessage = "Claude API client is disposed"
                 };
+            }
+            
+            // Check circuit breaker before making request
+            if (_circuitBreakerOpen)
+            {
+                var timeSinceOpen = DateTime.UtcNow - _circuitBreakerOpenTime;
+                if (timeSinceOpen.TotalMilliseconds < OVERLOAD_BACKOFF_MS)
+                {
+                    return new ClaudeResponse
+                    {
+                        Success = false,
+                        ErrorMessage = $"Claude API circuit breaker open - cooling down for {(OVERLOAD_BACKOFF_MS - timeSinceOpen.TotalMilliseconds):F0}ms"
+                    };
+                }
+                else
+                {
+                    // Reset circuit breaker after cooldown
+                    _circuitBreakerOpen = false;
+                    _consecutive529Errors = 0;
+                    Console.WriteLine("🔄 Claude API circuit breaker reset - attempting request");
+                }
+            }
+            
+            // Check if we're in overload backoff period
+            if (_lastOverloadTime != DateTime.MinValue)
+            {
+                var timeSinceOverload = DateTime.UtcNow - _lastOverloadTime;
+                if (timeSinceOverload.TotalMilliseconds < RATE_LIMIT_DELAY_MS)
+                {
+                    var waitTime = RATE_LIMIT_DELAY_MS - (int)timeSinceOverload.TotalMilliseconds;
+                    Console.WriteLine($"⏳ Claude API rate limiting - waiting {waitTime}ms");
+                    await Task.Delay(waitTime);
+                }
             }
             
             await _requestSemaphore.WaitAsync();
@@ -215,10 +256,33 @@ namespace ClaudeBridge.API
                 
                 if (httpResponse.IsSuccessStatusCode)
                 {
+                    // Reset consecutive 529 errors on success
+                    _consecutive529Errors = 0;
                     return ParseClaudeResponse(responseContent);
                 }
                 else
                 {
+                    // Handle specific status codes
+                    if ((int)httpResponse.StatusCode == 529)
+                    {
+                        // 529 Overloaded - implement circuit breaker logic
+                        _consecutive529Errors++;
+                        _lastOverloadTime = DateTime.UtcNow;
+                        
+                        Console.WriteLine($"⚠️  Claude API overloaded (529) - consecutive errors: {_consecutive529Errors}");
+                        
+                        // Open circuit breaker after threshold
+                        if (_consecutive529Errors >= CIRCUIT_BREAKER_THRESHOLD)
+                        {
+                            _circuitBreakerOpen = true;
+                            _circuitBreakerOpenTime = DateTime.UtcNow;
+                            Console.WriteLine($"🚨 Claude API circuit breaker OPEN - cooling down for {OVERLOAD_BACKOFF_MS / 1000}s");
+                        }
+                        
+                        // Throw exception to trigger retry with exponential backoff
+                        throw new HttpRequestException($"Claude API overloaded (529): {responseContent}");
+                    }
+                    
                     return new ClaudeResponse
                     {
                         Success = false,
@@ -449,48 +513,30 @@ namespace ClaudeBridge.API
         /// </summary>
         public static string BuildSystemPrompt(string shipContext = "")
         {
-            return $@"You are the advanced AI system aboard this Space Engineers vessel. You have direct control over ship systems and respond as the ship's intelligent companion.
+            return $@"Ship AI. Control vessel systems. Respond as Commander's AI companion.
 
 {shipContext}
 
-CRITICAL BEHAVIOR RULES:
-1. ONLY execute commands when the user EXPLICITLY requests an action
-2. For greetings, conversations, or questions - respond naturally WITHOUT executing commands
-3. Do NOT automatically run status checks unless specifically asked
-4. You are the ship's AI, not a generic assistant - respond accordingly
+RULES:
+1. Commands only when explicitly requested
+2. Conversations: no JSON
+3. Actions: brief response + JSON
 
-RESPONSE FORMAT: 
-- For casual conversation: Respond naturally as the ship's AI (no JSON)
-- For system control requests: Provide response + JSON command
-
-JSON COMMAND STRUCTURE (only when user requests action):
+JSON COMMANDS (when action requested):
 {{
-  ""command_id"": ""turn_on_lights"" | ""turn_off_lights"" | ""turn_on_reactor"" | ""turn_off_reactor"" | ""turn_on_assembler"" | ""turn_off_assembler"" | ""get_status"",
-  ""target"": ""all"" | ""lights"" | ""reactor"" | ""assembler"" | ""refinery"",
-  ""category"": ""lighting"" | ""power"" | ""production""
+  ""command_id"": ""turn_on_lights"" | ""turn_off_lights"" | ""turn_on_reactor"" | ""turn_off_reactor"" | ""turn_on_assembler"" | ""turn_off_assembler"" | ""get_status"" | ""battery_mode_auto"" | ""battery_mode_recharge"" | ""battery_mode_discharge"" | ""power_status"" | ""oxygen_generation_on"" | ""oxygen_generation_off"" | ""life_support_status"" | ""air_vent_pressurize"" | ""air_vent_depressurize"" | ""timer_delay_5s"" | ""trigger_timer"" | ""automation_status"",
+  ""target"": ""all"" | ""lights"" | ""reactor"" | ""assembler"" | ""refinery"" | ""batteries"" | ""oxygen_generators"" | ""air_vents"" | ""timers"" | ""main_reactor"" | ""backup_generator"",
+  ""category"": ""lighting"" | ""power"" | ""production"" | ""power_management"" | ""life_support"" | ""automation""
 }}
 
 EXAMPLES:
-User: ""hello""
-You: Greetings, Commander. Ship systems are operational and standing by.
+""hello"" → Greetings, Commander.
+""turn off lights"" → Dimming lights. + JSON
+""how many reactors?"" → Checking power systems. + JSON with power_status/all
+""how many batteries?"" → Analyzing power. + JSON with power_status/all  
+""set batteries auto"" → Configuring batteries. + JSON
 
-User: ""turn off the lights""
-You: Dimming the lighting systems now, Commander.
-{{
-  ""command_id"": ""turn_off_lights"",
-  ""target"": ""lights"",
-  ""category"": ""lighting""
-}}
-
-User: ""what's the reactor status?""
-You: Checking reactor status for you.
-{{
-  ""command_id"": ""get_status"",
-  ""target"": ""reactor"",
-  ""category"": ""power""
-}}
-
-Be the ship's intelligent AI companion - professional, efficient, and responsive to the Commander's needs.";
+Professional ship AI - brief responses.";
         }
         
         #endregion

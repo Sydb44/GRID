@@ -164,6 +164,16 @@ namespace GRID.Controllers
                         var grid = entity as IMyCubeGrid;
                         if (grid == null) continue;
                         
+                        // FIXED: Only scan player-owned grids for consistent reactor detection
+                        // This prevents counting reactors from other ships/derelicts/NPCs
+                        if (!IsPlayerOwnedGrid(grid)) 
+                        {
+                            MyLog.Default.WriteLine($"GRID {ComponentName}: Skipping non-player-owned grid '{grid.DisplayName}'");
+                            continue;
+                        }
+                        
+                        MyLog.Default.WriteLine($"GRID {ComponentName}: Scanning player-owned grid '{grid.DisplayName}'");
+                        
                         var gridBlocks = new List<IMySlimBlock>();
                         grid.GetBlocks(gridBlocks);
                         
@@ -204,6 +214,41 @@ namespace GRID.Controllers
         }
         
         /// <summary>
+        /// Check if grid is owned by the current player
+        /// FIXED: Ensures consistent block detection by only scanning player-owned grids
+        /// </summary>
+        protected bool IsPlayerOwnedGrid(IMyCubeGrid grid)
+        {
+            try
+            {
+                // Get current player
+                var player = MyAPIGateway.Session.Player;
+                if (player == null) return true; // In single player, treat all grids as owned
+                
+                // Check if any blocks on this grid are owned by the player
+                var gridBlocks = new List<IMySlimBlock>();
+                grid.GetBlocks(gridBlocks, (slim) => slim.FatBlock is IMyTerminalBlock);
+                
+                for (int i = 0; i < Math.Min(gridBlocks.Count, 5); i++) // Check first 5 blocks for performance
+                {
+                    var slimBlock = gridBlocks[i];
+                    var terminalBlock = slimBlock.FatBlock as IMyTerminalBlock;
+                    if (terminalBlock != null && terminalBlock.OwnerId == player.IdentityId)
+                    {
+                        return true; // Found a player-owned block
+                    }
+                }
+                
+                return false; // No player-owned blocks found
+            }
+            catch (Exception ex)
+            {
+                ErrorHandler.ReportError(ComponentName, "Grid ownership check failed", ex, ErrorHandler.ErrorSeverity.Low);
+                return true; // Default to including grid if ownership check fails
+            }
+        }
+        
+        /// <summary>
         /// Check if block matches target specification
         /// </summary>
         protected bool MatchesTarget(IMyTerminalBlock block, string targetLower)
@@ -227,6 +272,18 @@ namespace GRID.Controllers
                 if (targetLower == "refinery" && blockType.Contains("refinery"))
                     return true;
                 if (targetLower == "battery" && blockType.Contains("battery"))
+                    return true;
+                
+                // FIXED: Add Step 9 target patterns for ClaudeBridge compatibility
+                if (targetLower == "batteries" && blockType.Contains("battery"))
+                    return true;
+                if (targetLower == "reactors" && blockType.Contains("reactor"))
+                    return true;
+                if (targetLower == "oxygen_generators" && blockType.Contains("oxygen"))
+                    return true;
+                if (targetLower == "air_vents" && blockType.Contains("airvent"))
+                    return true;
+                if (targetLower == "timers" && blockType.Contains("timer"))
                     return true;
                 
                 return false;

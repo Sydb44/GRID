@@ -43,6 +43,36 @@ namespace GRID.Controllers
         
         #endregion
         
+        #region Helper Methods
+        
+        /// <summary>
+        /// Generate helpful error message with suggestions for available blocks
+        /// </summary>
+        private static string GenerateHelpfulErrorMessage(string failedTarget, string operation)
+        {
+            var baseMessage = $"Target '{failedTarget}' not found";
+            
+            // Add helpful suggestions based on common targets
+            if (failedTarget.ToLower().Contains("main_reactor") || failedTarget.ToLower().Contains("backup_reactor"))
+            {
+                return $"{baseMessage}. Try 'reactor', 'all reactors', or 'Small Reactor' instead. Use 'ship' command to see available blocks.";
+            }
+            else if (failedTarget.ToLower().Contains("main_batteries") || failedTarget.ToLower().Contains("backup_batteries"))
+            {
+                return $"{baseMessage}. Try 'batteries', 'all batteries', or 'Battery' instead. Use 'ship' command to see available blocks.";
+            }
+            else if (failedTarget.ToLower().Contains("main_") || failedTarget.ToLower().Contains("backup_"))
+            {
+                return $"{baseMessage}. Avoid 'main_' or 'backup_' prefixes. Try 'all', block type names, or use 'ship' command to see available blocks.";
+            }
+            else
+            {
+                return $"{baseMessage}. Try 'all', 'lights', 'reactor', 'assembler', or use 'ship' command to see available blocks.";
+            }
+        }
+        
+        #endregion
+        
         #region Universal Commands - Real SE ModAPI Integration
         
         /// <summary>
@@ -61,7 +91,7 @@ namespace GRID.Controllers
                 
                 if (blocks.Count == 0)
                 {
-                    result = $"No functional blocks found matching '{target}'";
+                    result = GenerateHelpfulErrorMessage(target, "turn on");
                     MyLog.Default.WriteLine($"GRID UniversalController: {result}");
                     return false;
                 }
@@ -108,7 +138,7 @@ namespace GRID.Controllers
                 
                 if (blocks.Count == 0)
                 {
-                    result = $"No functional blocks found matching '{target}'";
+                    result = GenerateHelpfulErrorMessage(target, "turn on");
                     MyLog.Default.WriteLine($"GRID UniversalController: {result}");
                     return false;
                 }
@@ -210,7 +240,7 @@ namespace GRID.Controllers
                 
                 if (blocks.Count == 0)
                 {
-                    result = $"No blocks found matching '{target}'";
+                    result = GenerateHelpfulErrorMessage(target, "get status");
                     return false;
                 }
                 

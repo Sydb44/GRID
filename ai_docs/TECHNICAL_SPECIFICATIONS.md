@@ -763,4 +763,54 @@ public static ExecutionResult ExecuteCommand(CommandSpecification command,
 }
 ```
 
+## Debug Output Management Architecture
+
+### **DebugOutputManager.cs - Configurable Verbosity System**
+
+**Purpose**: Control debug output pollution and provide configurable verbosity levels for optimal user experience.
+
+**Design Principles**:
+- **User Control**: Users can adjust debug verbosity in real-time
+- **Performance Focus**: Minimal overhead when debug output disabled
+- **Contextual Output**: Different verbosity levels for different types of information
+- **Clean UX**: Essential information always visible, noise filtered out
+
+**Verbosity Levels**:
+```csharp
+public enum VerbosityLevel
+{
+    Silent = 0,     // No debug output - production mode
+    Essential = 1,  // Only critical information - default
+    Normal = 2,     // Standard operation info
+    Detailed = 3,   // All debug information - for troubleshooting
+    Verbose = 4     // Everything including internal state - for development
+}
+```
+
+**Usage Examples**:
+```csharp
+// Essential information (always shown unless Silent)
+DebugOutputManager.Essential("✅ Reactor count: 2 reactors detected");
+
+// Performance information (shown in Normal+ levels)
+DebugOutputManager.Performance("⏱️ Claude API response: 799ms");
+
+// Knowledge system debugging (only in Verbose level)
+DebugOutputManager.KnowledgeDebug("🔍 Found reactor command: Get reactor power output (score: 100.0)");
+```
+
+**User Commands**:
+- `debug` - Show current debug settings and available levels
+- `debug 0` - Silent mode (no debug output)
+- `debug 1` - Essential mode (default - critical info only)
+- `debug 2` - Normal mode (standard operation info)
+- `debug 3` - Detailed mode (all debug information)
+- `debug 4` - Verbose mode (everything including internals)
+
+**Implementation Benefits**:
+- **Reduced Output Pollution**: Knowledge system debugging only shown in verbose mode
+- **User Customizable**: Users can set verbosity based on their needs
+- **Performance Optimized**: No debug message formatting when output disabled
+- **Context Aware**: Different message types use appropriate verbosity levels
+
 This technical specification ensures that any rebuild of the GRID system follows the exact same C# 6.0 and SE ModAPI constraints that the current production-ready implementation uses, maintaining compatibility and safety standards.
